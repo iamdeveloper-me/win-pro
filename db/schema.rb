@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180115061227) do
+ActiveRecord::Schema.define(version: 20180602100931) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -21,9 +24,9 @@ ActiveRecord::Schema.define(version: 20180115061227) do
     t.integer  "author_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
-    t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
-    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
+    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
+    t.index ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
+    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
   end
 
   create_table "admin_users", force: :cascade do |t|
@@ -39,8 +42,8 @@ ActiveRecord::Schema.define(version: 20180115061227) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.index ["email"], name: "index_admin_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
   end
 
   create_table "blogs", force: :cascade do |t|
@@ -66,19 +69,19 @@ ActiveRecord::Schema.define(version: 20180115061227) do
     t.string   "city"
     t.integer  "share"
     t.integer  "like"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.         "lat"
-    t.         "lng"
+    t.decimal  "lat",         precision: 15, scale: 10
+    t.decimal  "lng",         precision: 15, scale: 10
     t.string   "photo"
     t.string   "address"
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "firmware_images", force: :cascade do |t|
     t.string   "firmware_image_filename"
-    t.binary   "firmware_image",          limit: 10485760
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.binary   "firmware_image"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "grapes", force: :cascade do |t|
@@ -111,8 +114,8 @@ ActiveRecord::Schema.define(version: 20180115061227) do
     t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["category_id", "created_at"], name: "index_sub_categories_on_category_id_and_created_at"
-    t.index ["category_id"], name: "index_sub_categories_on_category_id"
+    t.index ["category_id", "created_at"], name: "index_sub_categories_on_category_id_and_created_at", using: :btree
+    t.index ["category_id"], name: "index_sub_categories_on_category_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -137,6 +140,8 @@ ActiveRecord::Schema.define(version: 20180115061227) do
     t.boolean  "week_pub"
     t.string   "supply"
     t.string   "supply_url"
+    t.string   "wine_type"
   end
 
+  add_foreign_key "sub_categories", "categories"
 end
