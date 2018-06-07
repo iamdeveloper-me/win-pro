@@ -39,10 +39,18 @@
               </a>
               <div class="col-md-8 col-sm-8 col-xs-9 pages-section pull-right">
                 <ul class="pages-list">
-                  <li class="page-link"><%= link_to 'Grape', grapes_path %></li>
-                  <li class="page-link"><%= link_to 'Wine', wines_path %></li>
-                  <li class="page-link"><%= link_to 'Blog', blogs_path %></li>
-                  <li class="page-link"><%= link_to 'Help us to grow', grow_path %></li>
+                  <li class="page-link">
+                    <%= link_to 'Grape', grapes_path %>
+                  </li>
+                  <li class="page-link">
+                    <%= link_to 'Wine', wines_path %>
+                  </li>
+                  <li class="page-link">
+                    <%= link_to 'Blog', blogs_path %>
+                  </li>
+                  <!-- <li class="page-link">
+                    <%#= link_to 'Help us to grow', grow_path %>
+                  </li> -->
                 </ul>
                 <div class="search-field-wrapper hidden">
                 <%= form_for(:search_form, url:search_path, :method => 'get') do |f| %>
