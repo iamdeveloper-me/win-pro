@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get '/search', to: 'index#search', as: 'search'
   get '/shareup/:id', to: 'index#share_up', as: 'shareup'
   get '/likeup/:id', to: 'index#like_up', as: 'likeup'
+  get '/regions', to: 'index#regions', as: 'regions'
+
   get '/wines', to: 'wines#index'
   get '/wine_week', to: 'wines#week'
   get '/grape_week', to: 'grapes#week'

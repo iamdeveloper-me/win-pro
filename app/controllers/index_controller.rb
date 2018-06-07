@@ -1,14 +1,11 @@
 class IndexController < ApplicationController
 	def home
-
 	end
 
 	def about
-
 	end
 
 	def grow
-
 	end
 
 	def contact
@@ -50,8 +47,8 @@ class IndexController < ApplicationController
 			@grapes = Grape.where("name LIKE ?", "%#{params[:search]}%")
 			@grapes = Grape.where(publish: 't')
 			@wines = nil
-			
 		end
+	end
 	# 	if params[:search_select].nil? or params[:search_select] == ''
 	# 		@category = nil	
 	# 	else
@@ -100,31 +97,52 @@ class IndexController < ApplicationController
 	# 			@share = @company.share
 	# 		end
 	# 	end
-end
+	# end
 
-def like_up
-	@company = Company.find(params[:id]) unless params[:id].nil?
-	ip = Ip.where( "address = ? AND company_id = ?", get_ip, params[:id] ).first
-	if ip.nil?			
-		if @company.like.nil?
-			@like = 1 
-		else
-			@like = @company.like + 1 
-		end			
-		@company.update( :like => @like )			
-		ip = Ip.new(:address => get_ip, :company_id => params[:id], :like => 1 )
-		ip.save
-	else
-		if ip.like.nil?
-			@like = @company.like + 1
+	def like_up
+		@company = Company.find(params[:id]) unless params[:id].nil?
+		ip = Ip.where( "address = ? AND company_id = ?", get_ip, params[:id] ).first
+		if ip.nil?
+			if @company.like.nil?
+				@like = 1
+			else
+				@like = @company.like + 1
+			end
 			@company.update( :like => @like )
-			ip.update( :like => 1)
+			ip = Ip.new(:address => get_ip, :company_id => params[:id], :like => 1 )
+			ip.save
 		else
-			@like = @company.like
+			if ip.like.nil?
+				@like = @company.like + 1
+				@company.update( :like => @like )
+				ip.update( :like => 1)
+			else
+				@like = @company.like
+			end
+
+		end
+	end
+
+	def regions
+		grape_regions = []
+		wine_regions = []
+
+		Grape.all.each do |grape|
+			region = grape.regions
+			region = region.include?(',') ? region.split(',') : region
+			grape_regions << region
 		end
 
-	end
-end
+		Wine.all.each do |wine|
+			region = wine.regions
+			region = region.include?(',') ? region.split(',') : region
+			wine_regions << region
+		end
 
+		grape_regions.flatten!
+		wine_regions.flatten!
+
+		@regions = grape_regions | wine_regions
+	end
 
 end

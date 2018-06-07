@@ -1,0 +1,8 @@
+<% provide(:title, "Regions Page") %>
+<% provide(:body_class, "regions-page") %>
+
+<% @regions && @regions.each do |region| %>
+  <p>
+    <%= region %>
+  </p>
+<% end %>
