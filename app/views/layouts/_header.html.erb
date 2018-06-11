@@ -27,8 +27,46 @@
   <body class="<%= yield(:body_class) %>">
   <!-- Header Section -->
     <div class="header">
+<div class="container">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div class="logo">
+              <%= link_to image_tag("GrapepediaLogo (1).jpg", alt: "Rails logo"),root_path %> </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+            <%= link_to 'Grape', grapes_path %>
+            </li>
+            <li>
+            <%= link_to 'Wine', wines_path %>
+            </li>
+            <li>
+            <%= link_to 'Blog', blogs_path %>
+            </li>
+            <li>
+            <%= link_to 'Regions', regions_path %>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
      <!--Navigation Section-->
-      <nav class="navbar ">
+      <!--<nav class="navbar ">
         <div class="container-fluid no-padding">
           <div class="container logo-section-wrapper">
             <div class="row">
@@ -48,9 +86,9 @@
                   <li class="page-link">
                     <%= link_to 'Blog', blogs_path %>
                   </li>
-                  <!-- <li class="page-link">
+                  <li class="page-link">
                     <%#= link_to 'Help us to grow', grow_path %>
-                  </li> -->
+                  </li>
                   <li class="page-link">
                     <%= link_to 'Regions', regions_path %>
                   </li>
@@ -64,17 +102,14 @@
               </div>
             </div>
           </div>
-          <!--Open Menu Section-->
           <div class="container-fluid menu-container hidden">
             <div class="row">
               <div class="col-md-12 menu-list-wrapper">
                 <div class="container">
                   <div class="menu-header">
-                    <!--Tabs-->
                     <ul class="menu-tabs-section">
                       <li class="menu-tab active">
                         <a class="food_and_drink_anchor" ><span class=""></span> About Us</a>
-                        <!--Tabs Content -->
                         <div class="container-fluid" id="food-and-drink">
                           <div class="menu-listings-section">
                             <div class="tab-content_menu">
@@ -118,11 +153,9 @@
 
                           </div>
                         </div>
-                        <!--End of Tabs Content-->
                       </li>
                       <li class="menu-tab">
                         <a class="services_anchor"><span class=""></span> Contact us</a>
-                        <!--Tabs Content Services-->
                         <div class="container-fluid" id="services" >
                           <div class="menu-listings-section">
                             <div class="tab-content_menu"><div class="list-wrapper" >
@@ -165,11 +198,9 @@
 
                           </div>
                         </div>
-                        <!--End of Tabs Content-->
                       </li>
                       <li class="menu-tab">
                         <a class="events_anchor"><span class=""></span> How to make wine</a>
-                        <!--Tabs Content Events-->
                         <div class="container-fluid" id="events">
                           <div class="menu-listings-section">
                             <div class="tab-content_menu">
@@ -212,11 +243,9 @@
 
                           </div>
                         </div>
-                        <!--End of Tabs Content-->
                       </li>
                       <li class="menu-tab">
                         <a class="events_anchor"><span ></span> what is your bottle</a>
-                        <!--Tabs Content Events-->
                         <div class="container-fluid" id="events">
                           <div class="menu-listings-section">
                             <div class="tab-content_menu">
@@ -259,10 +288,8 @@
 
                           </div>
                         </div>
-                        <!--End of Tabs Content-->
                       </li>
                     </ul>
-                    <!--End of Tabs-->
                   </div>
                 </div>
 
@@ -270,9 +297,8 @@
             </div>
           </div>
 
-          <!--End of Open Menu Section-->
         </div>
-      </nav>
+      </nav>-->
       <!--End of Navigation-->
 </div>
 <!--End header section-->
