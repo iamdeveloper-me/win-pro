@@ -619,27 +619,7 @@ $la_color: #ffae00;
           float: left;
           width: 180px;
         }
-        #s2id_search_select {
-          float: left;
-          width: 180px;
-          background-color: #f0f0f5;
-          border: 1px solid #f0f0f5;
-          border-radius: 4px;
-          margin-top: 13px;
-          outline: 0;
-          .select2-choice {
-            background-image: none;
-            background-color: #f0f0f5;
-            border: 1px solid #f0f0f5;
-            border-radius: 4px;
-            .select2-arrow {
-              border-left: 0px;
-              background-image: none;
-              background-color: #f0f0f5;
-
-            }
-          }
-        }
+       
         .search_button {
           height: 57.4px;
           width: 190px;
@@ -765,9 +745,6 @@ $la_color: #ffae00;
 
 
     .info-container {
-      position: absolute;
-      bottom: 0;
-      z-index: 1;
       .category-container {
         font-size: 18px;
         font-family: "Adobe_casion_pro", SansSerif;
@@ -1094,9 +1071,7 @@ $la_color: #ffae00;
       background-position: center 50%;
       width: 100%;
       .info-container {
-        position: absolute;
-        width: 100%;
-        top: 0;
+       padding: 40px 0px;
         .category-container {
           margin-top: 120px;
           font-size: 18px;
@@ -1109,7 +1084,7 @@ $la_color: #ffae00;
           font-family: Raleway, sans-serif;
           font-weight: 300;
           color: white;
-          font-size: 36px;
+          font-size: 30px !important;
           line-height: 34px;
           padding-top: 5px;
           text-transform: uppercase;
@@ -1120,7 +1095,8 @@ $la_color: #ffae00;
           font-size: 13px;
           line-height: 24px;
           color: white;
-          padding-top: 35px;
+          padding-top: 20px;
+          width: 90%;
           a {
             color: white;
             font-weight: 700;
@@ -1255,9 +1231,9 @@ $la_color: #ffae00;
     font-size: 16px;
     line-height: 25px;
     color: #6b6b6b;
-    border-right: 1px solid #eeeeee;
+    border-right: 0px solid #eeeeee!important;
     padding-right: 45px;
-    padding-bottom: 35px;
+    padding-bottom: 0px!important;
   }
   .progress-container {
     display: inline-block;
@@ -1318,7 +1294,7 @@ $la_color: #ffae00;
             height: 40px;
           }
           &.la {
-            background-image: url(asset_path('icon-phone-la.png'));
+            background-image:progress-bar-wrapper  url(asset_path('icon-phone-la.png'));
             background-position: -11px -3px;
           }
         }
@@ -1335,14 +1311,14 @@ $la_color: #ffae00;
         }
         .progress-bar-wrapper {
           float: left;
-          width: 89%;
+          width: 70% !important;
           margin-left: 28px;
           background-color: #f4f4f4;
           border-radius: 10px;
           margin-top: 5px;
           .progress-bar {
             border-radius: 10px;
-            background-color: #cf0f40;
+            background-color: #21800d;
             color: white;
             &.ny {
               background-color: $ny_color;

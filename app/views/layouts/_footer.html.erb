@@ -1,114 +1,122 @@
 <!--Footer Start-->
 <footer>
-  <div class="container main-footer">
-    <div class="row">
-        <div class="col-md-8 no-padding">
-            <div class="col-md-6 col-sm-6 col-xs-6 border">
-                <div class="newsletter-container">
-                    <div class="title-container">Newsletter</div>
-                    <div class="join-wrapper">
-                        <input class="newsletter_input" placeholder="Enter Email" type="email">
-                        <button class="join-button sf">Join</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 border">
-                <div class="connect-wrapper">
-                    <div class="title-container">Connect with us</div>
-                    <ul class="buttons-list sf">
-                        <li><a class="social-twitter" href="#"></a></li>
-                        <li><a class="social-facebook" href="#"></a></li>
-                        <li><a class="social-google" href="#"></a></li>
-                        <li><a class="social-instagram" href="#"></a></li>
-                        <li><a class="social-rss" href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 border-right">
-                <div class="costumer-service-wrapper">
-                    <div class="title-container">CUSTOMER SERVICES</div>
-                    <div class="col-md-6">
-                       <%= link_to 'Wine of the week', wines_path %>
-                       <%= link_to 'Grape of the week', grapes_path %>
-                       <a href="#">How to make wine</a>
-                    </div>
-                    <div class="col-md-6">
-                       <a href="#">What is your bottle</a>
-                       <a href="#">Order Status</a>
-                       <a href="#">How It Works</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 border-right">
-                <div class="about-us-wrapper">
-                    <div class="title-container">ABOUT US</div>
-                    <div class="col-md-6">
-                        <a href="#">FAQs</a>
-                        <a href="#">Order Status</a>
-                        <a href="#">How It Works</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">FAQs</a>
-                        <a href="#">Order Status</a>
-                        <a href="#">How It Works</a>
-                    </div>
-                </div>
-            </div>
-
-          <!--Find Us wrapper only for mobile -->
-          <div class="col-md-4 col-sm-4 col-xs-4 find-us-container hidden-lg hidden-md">
-            <div class="find-us-wrapper">
-              <div class="title-container">Finds Us</div>
-              <ul class="find-us-list">
-                <li class="location">
-                    <span class="find-location sf"></span>
-                    <div class="text-container">157 New Kent Rd, Borough, <br>London SE1 4AG, UK </div>
-                </li>
-                <li class="phone">
-                    <span class="find-phone sf"></span>
-                    <div class="text-container">(000) 123 456789</div>
-                </li>
-                <li class="email">
-                    <span class="find-email sf"></span>
-                    <div class="text-container"><a href="mailto:SF@10bestnetwork.com">SF@Grapedia.com</a></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--end of Find us for mobile-->
-        </div>
-      <div class="col-md-4 col-sm-4 col-xs-4 hidden-sm hidden-xs">
-        <div class="find-us-wrapper">
-          <div class="title-container">Finds Us</div>
-          <ul class="find-us-list">
-            <li class="location">
-                <span class="find-location sf"></span>
-                <div class="text-container">157 New Kent Rd, Borough, <br>London SE1 4AG, UK </div>
-            </li>
-            <li class="phone">
-                <span class="find-phone sf"></span>
-                <div class="text-container">(000) 123 456789</div>
-            </li>
-            <li class="email">
-                <span class="find-email sf"></span>
-                <div class="text-container"><a href="mailto:SF@10bestnetwork.com">SF@Grapedia.com</a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid ">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="copyright-container">
-          Grapedia © <%= DateTime.now.strftime "%Y" %>. All Rights Reserved.
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 bottom_logo">
+			 <a href="">	<img src="assets/bottom_logo.png" width="80%" alt=""> </a>
+				<p>
+					<a href=""> <b>NEWS LETTER</b> </a>
+				</p>
+				 <div class="join-wrapper">
+					<input class="newsletter_input" placeholder="Enter Email" type="email">
+				 	<button class="join-button sf">Join</button>
+			</div>
+			 <!-- <form action="#">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Enter Email" id="email">
+						<button class="join-button sf">Join</button>
+					</div>
+				</form>  -->
+			</div>
+			<div class="col-md-3">
+				<div class="list">
+					<p>
+						<b> <a href="#">CUSTOMER SERVICES </a> </b>
+					</p>
+					<ul>
+						<li> <a href="#">Wine of the week </a> </li>
+						<li> <a href="#">Grape of the week </a> </li>
+						<li> <a href="#"> How to make wine </a> </li>
+						<li> <a href="#"> What is your bottle</a>  </li>
+						<li><a href="#">Order Status </a> </li>
+						<li> <a href="#"> How It Works </a>  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="list">
+					<p>
+						<b><a href="#">ABOUT US </a>  </b>
+					</p>
+					<ul>
+						<li> <a href="#"> FAQs </a> </li>
+						<li> <a href="#"> Mobile Solution </a> </li>
+						<li> <a href="#"> Enterprise </a> </li>
+						<li> <a href="#"> UI-UX  </a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="list">
+					<p>
+						<b> <a href="#">FINDS US </a>  </b>
+					</p>
+					<ul>
+						<li class="locationlink">
+						<a href="#">  <i class="fa fa-map-marker" style="color:#ffffff !important;"></i>
+						<span>157 New Kent Rd, Borough, London SE1 4AG, UK </a>	 </li>
+						</span>
+						<li class="locationlink">
+						<a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i>
+					 <span>	(000) 123 456789 </span> </a>	
+						</li>
+						<li>
+						<a href="#"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+					 <span>	SF@Grapedia.com </span> </a>	 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 
+<section class="bootom_footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="copy">
+					<p>
+						<b> <a href="#">Grapedia © 2018. All Rights Reserved. </a>  </b>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="social_icons_bot text-right">
+					<p>
+						<b><a href="#">CONNECT WITH US  </a></b>
+					</p>
+					<ul class="">
+						<li>
+							<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						    </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
  </body>
 </html>
