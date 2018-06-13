@@ -103,13 +103,13 @@ a  {
     padding: 0%;
     margin: 0%;
 }
-.inner_text{
-    background-color: #e5e5e5;
-    padding: 0%;
+.halfgraybg{
+    background: linear-gradient(to left, #ffffff 50%, #e5e5e5 50%);
     min-height: 360px;
 }
-.inner_text2{
-    padding: 6%;
+.halfwhitebg{
+    background: linear-gradient(to left, #e5e5e5 50%, #ffffff 50%);
+    min-height: 360px;
 }
 .inner{
     margin-left: 100px;
@@ -249,6 +249,9 @@ margin-top: 80px;
     display: inline;
     margin: 5px;
 }
+.social_icons_bot ul li:last-child{
+    margin-right: 0px!important;
+}
 .learn-more-section .progress-container .progress-list .progress-item .icon-expert, .learn-more-section .progress-container .progress-list .progress-item .icon-awards, .learn-more-section .progress-container .progress-list .progress-item .icon-phone{
     float:right;
     BORDER-RADIUS: 50%;
@@ -267,37 +270,35 @@ margin-top: 80px;
 .greenbg{    
     background-color: #218212!important;
 }
-.newsletter_input{
+
+.join-wrapper{
+    background-color: #ffffff!important;
+    width: 80%;
+    padding:5PX 0PX;
+    overflow: hidden;
+}
+.join-wrapper input, .join-wrapper input::focus{
+    background: #ffffff;
+    float: left;
+    border: 0px solid #fff;
+    padding: 6px 10PX 5PX 10px;
+    MAX-WIDTH: 192PX;
+    box-shadow: none;
+   }
+   .newsletter_input{
     margin: 0px;
     padding: 5px;
     border: 0px;
     margin-right: -4px;
+    border-right: 1px solid #333333;
 }
-.join-button{
-    margin: 0px;
-    padding: 9px 10px 10px 10px;
-    border: 0px; 
-    margin-top: 9px;
-    border-left: 1px solid #000000;
-    background-color: #ffffff !important;
-  background-image: linear-gradient(180deg, #ffffff, #ffffff);
-  box-shadow: none !important;
-  text-shadow:none !important;
-}
-.join-button:hover{
-  background-color: #ffffff !important;
-  background-image: linear-gradient(180deg, #ffffff, #ffffff);
-  box-shadow: none !important;
-  text-shadow:none !important;
-}
-footer .newsletter-container .join-wrapper .newsletter_input:placeholder-shown{
-    background-color: #ffffff;
-}
-footer .newsletter-container .join-wrapper{
-    background-color: #ffffff;
-}
-footer .newsletter-container .join-wrapper .join-button{
-    background-image: linear-gradient(180deg, #ffffff, #ffffff);
+.join-wrapper button, .join-wrapper button:hover{
+ background: #ffffff;  
+ float:right;
+ border: 0px solid #fff;
+ box-shadow: none;
+ text-transform: capitalize;
+ padding: 10px 20px; 
 }
 footer a{color:#fff!important;}
 footer a:hover{color:#fff!important;opacity: .6;}
@@ -440,15 +441,18 @@ min-height: 430px;
 .feature-section .img-wrapper .image-container .info-container{
 padding: 50px 0px!important;
 }
-.search-wrapper:hover {
-    -webkit-box-shadow:none!important;
-    -moz-box-shadow:  none!important;
-    box-shadow: none!important;
+.search-wrapper:hover, .search-wrapper:focus {
+    -webkit-box-shadow:inherit!important;
+    -moz-box-shadow:inherit!important;
+    box-shadow:inherit!important;
   }
   .search-wrapper .focus {
-    -webkit-box-shadow:none!important;
-    -moz-box-shadow:  none!important;
-    box-shadow: none!important;
+    -webkit-box-shadow:inherit!important;
+    -moz-box-shadow:inherit!important;
+    box-shadow:inherit!important;
+  }
+  .search-section .container-fluid .search-field-container .search-wrapper .search_field_input:focus, .select2-drop-mask:focus{
+      box-shadow: none!important;
   }
 @media(min-width:992px){
     .heading h2{
@@ -467,6 +471,12 @@ padding: 50px 0px!important;
 }
 
 @media(min-width:768px){
+    .logo{
+        margin-left: 10px!important;
+    }
+    .logo img{
+        max-width: 240px!important;
+    }
     .search-section .container-fluid .search-field-container .search-wrapper #s2id_search_select {
         background-color:unset;
         margin-left: -32px;
@@ -486,3 +496,23 @@ padding: 50px 0px!important;
 }
 
 
+
+@media(max-width:767px){
+    .search_icon{position: absolute;
+        z-index: 99999999;
+        left: 6px;}
+    .search-section .container-fluid .search-field-container .search-wrapper .search_field_input{
+       width: 94%!important;
+        max-width: inherit!important;
+        text-align: center!important;
+    }
+    .select2-choice{padding: 10px 0px;height: inherit;}
+    .search-wrapper{max-height: inherit!important;height:auto!important;overflow: hidden;}
+    .search-section #s2id_search_select{display: block!important;width: 100%!important;border-left:0px solid #fff!important;}
+    .logo{
+        margin-left: 10px!important;
+    }
+    .logo img{
+        max-width: 240px!important;
+    }
+}
