@@ -82,7 +82,7 @@ a  {
     margin-bottom: 100px;
 }
 .heading h2::after, .heading h2::before{
-    width: 24%;
+    width: 30%;
     height: 2px;
     content: '';
     position: absolute;
@@ -498,6 +498,19 @@ padding: 50px 0px!important;
 
 
 @media(max-width:767px){
+    .halfgraybg{
+        background: linear-gradient(to top, #ffffff 50%, #e5e5e5 50%);
+        min-height: 360px;
+    }
+    .halfwhitebg{
+        background: #ffffff;
+        min-height: 360px;
+    }
+    .blackoverlay{overflow: hidden;padding:5px 20px!important;}
+    .blackoverlay .social-list{top:inherit!important;}
+    .feature-section .img-wrapper .image-container {
+        background-position: right;
+    }
     .search_icon{position: absolute;
         z-index: 99999999;
         left: 6px;}
@@ -515,4 +528,156 @@ padding: 50px 0px!important;
     .logo img{
         max-width: 240px!important;
     }
+    .wine_inner{
+        margin-bottom: 20px;
+    }
+    .wine{
+        margin-top: 50px;
+    }
+    .icons h3{
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .icons p{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 42px;
+    }
+    .icons{
+        margin-top: -24px;
+    }
+    .heading h2 {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+    .inner{
+        margin-left:0px;
+        font-size: 14px;
+        padding: 0px;
+    }
+    .started_filling{
+        margin-bottom: 40px;
+    }
+    .inner p{
+        padding: 20px 0;
+    }
+    .icons_bar{
+        padding-left: 0px;
+         margin-top: 0px;
+        overflow: hidden;
+        padding-right: 0%;
+        margin-bottom: 20px;
+    }
+    .blackoverlay{
+       padding-left:0px;
+       margin-top: -45px;
+    }
+    .feature-section .img-wrapper .image-container .info-container .text-container{
+       font-size: 16px;
+       margin-top: -15px;
+    }
+    .feature-section .img-wrapper .image-container .info-container .button-container .read-more-container{
+        width: 100%;
+    }
+    .learn-more-section .progress-container .progress-list .progress-item .progress-name-container {
+         padding-top: 15px;
+         padding-left: 0;
+         font-size: 14.5px;
+    }
+    .learn-more-section .progress-container .progress-list .progress-item .progress-bar-wrapper{
+        max-width: 70%;
+        margin-left: 0px;
+    }
+    .learn-more-section .progress-container .progress-list .progress-item{
+        padding-right: 0px;
+    }
+    .learn-more-section .progress-container .progress-list .progress-item .icon-expert, .learn-more-section .progress-container .progress-list .progress-item .icon-awards, .learn-more-section .progress-container .progress-list .progress-item .icon-phone {
+        width: 80px;
+        height: 80px;
+        margin-right: 0px;
+    }
+    .contentdivicon {
+        font-size: 12px;
+        margin-left: 90px;
+        margin-top: 14px;
+    }
+    .search-section .container-fluid .heading-container span{
+        font-size: 34px;
+    }
+    .inner_textp{
+        padding-left: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    .icons_col{
+       padding-right: 0px !important; 
+       padding-left: 0px !important; 
+       margin-top: 50px !important;
+    }
+    .bottom_logo {
+        margin-top: 50px;
+    }
+    .join-wrapper{
+        width: 100%;
+    }
+    .join-wrapper button, .join-wrapper button:hover{
+        padding: 10px 40px;
+    }
+    .list{
+        margin-top:20px;
+    }
+    footer{
+        text-align: center !important;
+    }
+    .bootom_footer{
+        text-align: center !important;
+    }
+    .social_icons_bot{
+
+        text-align: center !important;
+    }
+    .locationlink a i{
+        float:inherit;
+    }
+    .locationlink a span{
+        float:inherit;
+    }
+    .heading h2::after, .heading h2::before{
+        width: 22%;
+        
+    }
+    .icons_col{
+        margin-top:60px !important;
+        margin-bottom:0px;
+    }
+    .inner_para{
+        margin-top:0px;
+        background: #e5e5e5;
+    }
+    .mobnopadd{
+        padding: 0px!important;
+    }
+    .mobpadd15px{
+        padding: 15px;
+    }
+    .marbot100px{
+        margin-bottom: 100px;
+    }
+    .navbar-toggle{
+        background: #ffffff!important;
+        border: 1px solid #000000;
+        box-shadow: 0px;
+        margin-bottom: 0px;
+    }
+    .navbar-toggle .icon-bar{
+        background: #000000;
+    }
+    a.button:not(.disabled):active, a:link.button:not(.disabled):active, a:visited.button:not(.disabled):active, input[type=submit]:not(.disabled):active, input[type=button]:not(.disabled):active, button:not(.disabled):active{
+        background: #e5e5e5;
+    }
+   .navbar-collapse{
+       margin-top: 15px;
+   }
 }
