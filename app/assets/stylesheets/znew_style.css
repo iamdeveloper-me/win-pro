@@ -1,9 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 body{
     padding: 0%;
     margin: 0%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 13px;
 
 }
@@ -106,9 +106,10 @@ a  {
 .inner_text{
     background-color: #e5e5e5;
     padding: 0%;
+    min-height: 360px;
 }
 .inner_text2{
-    padding: 5.3%;
+    padding: 6%;
 }
 .inner{
     margin-left: 100px;
@@ -274,8 +275,20 @@ margin-top: 80px;
 }
 .join-button{
     margin: 0px;
-    padding: 10px 5px 9px 5px;
-    border: 0px;
+    padding: 9px 10px 10px 10px;
+    border: 0px; 
+    margin-top: 9px;
+    border-left: 1px solid #000000;
+    background-color: #ffffff !important;
+  background-image: linear-gradient(180deg, #ffffff, #ffffff);
+  box-shadow: none !important;
+  text-shadow:none !important;
+}
+.join-button:hover{
+  background-color: #ffffff !important;
+  background-image: linear-gradient(180deg, #ffffff, #ffffff);
+  box-shadow: none !important;
+  text-shadow:none !important;
 }
 footer .newsletter-container .join-wrapper .newsletter_input:placeholder-shown{
     background-color: #ffffff;
@@ -427,3 +440,49 @@ min-height: 430px;
 .feature-section .img-wrapper .image-container .info-container{
 padding: 50px 0px!important;
 }
+.search-wrapper:hover {
+    -webkit-box-shadow:none!important;
+    -moz-box-shadow:  none!important;
+    box-shadow: none!important;
+  }
+  .search-wrapper .focus {
+    -webkit-box-shadow:none!important;
+    -moz-box-shadow:  none!important;
+    box-shadow: none!important;
+  }
+@media(min-width:992px){
+    .heading h2{
+        font-size: 40px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .learn-more-section .progress-container .progress-list .progress-item .progress-bar-wrapper{
+        margin-left: 26px;
+    }
+    .learn-more-section .progress-container .progress-list .progress-item .icon-expert, .learn-more-section .progress-container .progress-list .progress-item .icon-awards, .learn-more-section .progress-container .progress-list .progress-item .icon-phone{
+        margin-right: 5px;
+    }
+
+}
+
+@media(min-width:768px){
+    .search-section .container-fluid .search-field-container .search-wrapper #s2id_search_select {
+        background-color:unset;
+        margin-left: -32px;
+    }
+    .wine_inner{
+        margin-bottom :30px;
+          
+        }
+    .heading h2{
+        font-size: 32px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        }
+    .inner{
+        margin-left: 0px;
+    }
+}
+
+

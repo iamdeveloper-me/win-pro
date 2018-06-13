@@ -571,22 +571,22 @@ $la_color: #ffae00;
         border-radius: 4px;
         max-height: 58px;
         height: 58px;
-        -webkit-transition: all 0.30s ease-in-out;
-        -moz-transition: all 0.30s ease-in-out;
-        -ms-transition: all 0.30s ease-in-out;
-        -o-transition: all 0.30s ease-in-out;
+         -webkit-transition: all 0.30s ease-in-out;
+         -moz-transition: all 0.30s ease-in-out;
+         -ms-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
         outline: none;
         border: 1px solid #DDDDDD;
-        &:hover {
-          -webkit-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-          -moz-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-          box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-        }
-        &.focus {
-          -webkit-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-          -moz-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-          box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
-        }
+         &:hover {
+           -webkit-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+           -moz-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+           box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+         }
+         &.focus {
+           -webkit-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+           -moz-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+           box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.75);
+         }
 
 
         .search_icon {
@@ -1200,6 +1200,7 @@ $la_color: #ffae00;
     color: #323232;
     text-align: center;
     margin-top: 50px;
+    transition: none!important;
   }
   .quote-container {
     font-family: Proxima_nova;
@@ -1228,7 +1229,7 @@ $la_color: #ffae00;
   .text-container {
     font-family: "Proxima_nova";
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     color: #6b6b6b;
     border-right: 0px solid #eeeeee!important;
@@ -1486,18 +1487,18 @@ footer {
         }
       }
       .join-button {
-        background-color: #161f26;
+       
         border: 0px transparent;
         height: 42px;
-        color: #cf0f40;
+        
         font-family: "Raleway",sans-serif;
         font-size: 13px;
         font-weight: 700;
         &.ny {
-          color: $ny_color;
+          color: unset;
         }
         &.la {
-          color: $la_color;
+          color: unset;
         }
       }
     }
