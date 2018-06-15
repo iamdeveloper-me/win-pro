@@ -129,18 +129,22 @@ class IndexController < ApplicationController
 
 		Grape.all.each do |grape|
 			region = grape.regions
-			region = region.include?(',') ? region.split(',') : region
-			grape_regions << region
+      if region
+  		  region = region.include?(',') ? region.split(',') : region
+  		  grape_regions << region
+      end
 		end
 
 		Wine.all.each do |wine|
 			region = wine.regions
-			region = region.include?(',') ? region.split(',') : region
-			wine_regions << region
+      if region
+			  region = region && region.include?(',') ? region.split(',') : region
+			  wine_regions << region
+      end
 		end
 
-		grape_regions.flatten!
-		wine_regions.flatten!
+		grape_regions.flatten! unless grape_regions.blank?
+		wine_regions.flatten! unless wine_regions.blank?
 
 		@regions = grape_regions | wine_regions
 	end
