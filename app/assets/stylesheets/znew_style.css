@@ -26,7 +26,7 @@ a  {
 }
 .navbar{
     margin-bottom:0px;
-    padding: 15px 0px 25px 0px;
+    padding: 15px 0px 1px 0px;
 }
 .logo a{
     float: left;
@@ -49,12 +49,12 @@ a  {
 /*End of Navigation*/
 
 .wine{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .week{
     border: 1px solid #21800d!important;
     position: relative;
-    padding-top: 70px;
+    padding-top: 26px;
 }
 .week .place-link{
     position: absolute;
@@ -66,13 +66,13 @@ a  {
   margin-top: 20px;
   }
 .icons h3{
-    margin-top: 45px;
-    font-size: 36.11px;
+    margin-top: 26px;
+    font-size: 24px;
 }
 .icons p{
-   font-size: 20.8px;
-   margin-top: 32px;
-   margin-bottom: 42px;
+    font-size: 14.8px;
+    margin-top: 18px;
+    margin-bottom: 26px;
 }
 .heading h2{
     font-size: 50px;
@@ -82,7 +82,7 @@ a  {
     margin-bottom: 100px;
 }
 .heading h2::after, .heading h2::before{
-    width: 30%;
+    width: 22%;
     height: 2px;
     content: '';
     position: absolute;
@@ -91,13 +91,16 @@ a  {
     top: 50%;
 }
 .heading h2::before{
-    left: 0px !important; 
+    left: 105px !important; 
 }
 .heading h2::after{
-    right: 0px !important;   
+    right: 105px !important;   
 }
 .started_filling{
-    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 66px;
+    padding-left: 0;
+    margin-left: 100px;
 }
 .started_filling1{
     padding: 0%;
@@ -105,11 +108,11 @@ a  {
 }
 .halfgraybg{
     background: linear-gradient(to left, #ffffff 50%, #e5e5e5 50%);
-    min-height: 360px;
+    min-height: 300px;
 }
 .halfwhitebg{
     background: linear-gradient(to left, #e5e5e5 50%, #ffffff 50%);
-    min-height: 360px;
+    min-height: 280px;
 }
 .inner{
     margin-left: 100px;
@@ -117,30 +120,30 @@ a  {
     padding: 30px 0px;
 }
 .inner p{
-    padding: 25px;
+    padding-right: 25px;
+    padding-left: 0;
 }
 .icon_img{
     border: 2px solid #21800d;
     float: left;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 78px;
+    height: 78px;
     text-align: center;
     line-height: 74px;  
 }
 .icon_img img{
-    max-width: 40px;
+    max-width: 32px;
 }
 .icons_bar{
-    padding-left: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
     overflow: hidden;
     padding-right: 20%;
 }
 .contentdivicon{
-  font-size: 16px;
+    font-size: 14px;
     margin-left: 100px;
-    max-width: 88%;
+    margin-top: 10px
 }
 .contentdiviconmidgap{
     margin:35px 0px 35px 0px;
@@ -192,15 +195,15 @@ a  {
     padding: 25px;
 }
 footer{
-    background-color: #333333;
-    margin-top: -50px;
-    padding-bottom: 50px !important;
+    background-color: #707838;
+    margin-top:50px;
+    padding-bottom: 30px !important;
 }
 footer ul li {
     color: #ffffff;
 }
 .bottom_logo{
-margin-top: 80px;
+margin-top: 35px;
 }
 .bottom_logo p{
     color: #ffffff;
@@ -212,7 +215,7 @@ margin-top: 80px;
 }
 .list{
     color: #ffffff;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 0px;
 }
 .list p{
@@ -230,10 +233,10 @@ margin-top: 80px;
 }
 
 .bootom_footer{
-    background-color: #4d4c4c!important;
+    background-color: #707838!important;
     color: #ffffff;
     padding-top: 20px;
-    border-top: unset !important;
+    border-top: 1px solid #ffffff !important;
 }
 .bootom_footer p{
     font-size: 12px;
@@ -261,11 +264,19 @@ margin-top: 80px;
     width: 80px;
     height: 80px;
 }
+.learn-more-section .progress-container .progress-list{
+    padding-right: 0;
+}
+.container .mobnopadd{
+    padding-left: 0px !important;
+}
 .learn-more-section .progress-container .progress-list .progress-item .progress-bar-wrapper{
     max-width: 78%;
+    margin-left: 0 !important
 }
 .learn-more-section .progress-container .progress-list .progress-item .progress-name-container{
     padding-top:15px;
+    padding-left: 0;
 }
 .greenbg{    
     background-color: #218212!important;
@@ -316,7 +327,8 @@ overflow: hidden;
     margin-top: 0px;
 }
 .started_filling{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .learn-more-section .progress-container .progress-list .progress-item .icon-expert {
@@ -333,8 +345,8 @@ overflow: hidden;
     background-size: 24px;
 }
 .learn-more-section .progress-container .progress-list .progress-item .icon-expert, .learn-more-section .progress-container .progress-list .progress-item .icon-awards, .learn-more-section .progress-container .progress-list .progress-item .icon-phone{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
 }
 a.button, a:link.button, a:visited.button, input[type=submit], input[type=button], button{
@@ -360,7 +372,7 @@ a.button, a:link.button, a:visited.button, input[type=submit], input[type=button
     background-repeat: no-repeat;
    
 }
-.blackoverlay{background: rgba(0, 0, 0, 0.3)!important;padding-left: 50px;}
+.blackoverlay{background: rgba(0, 0, 0, 0.3)!important;padding-left: 30px;}
 .feature-section .img-wrapper .image-container .info-container .button-container .read-more-container{
     border: 2px solid #ffffff;
     border-radius: 10px;
@@ -436,10 +448,10 @@ clear: both;
 }
 .feature-section .img-wrapper .image-container{
 height: auto!important;
-min-height: 430px;
+min-height: 330px;
 }
 .feature-section .img-wrapper .image-container .info-container{
-padding: 50px 0px!important;
+   padding-top: 0px;
 }
 .search-wrapper:hover, .search-wrapper:focus {
     -webkit-box-shadow:inherit!important;
@@ -454,6 +466,107 @@ padding: 50px 0px!important;
   .search-section .container-fluid .search-field-container .search-wrapper .search_field_input:focus, .select2-drop-mask:focus{
       box-shadow: none!important;
   }
+  .mobpadd15px{
+      padding-left: 0;
+  }
+  .why_are p{
+      margin-left: 30px;
+  }
+/* Grape page start*/
+
+.ranking-page .main-banner-section .banner-container .places-container{
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+.ranking-page .main-banner-section .banner-container .category-title{
+    text-align: left !important;
+}
+.regins span{
+    color: #218212;
+}
+.regins :first-child{
+    padding-left: 22px;
+}
+.regins :last-child{
+    margin-left: 20px;
+}
+.regins_para{
+    margin-top: 100px;
+}
+.regins_col ul{
+    margin: 0;
+    padding: 0;
+}
+.regins_col ul li{
+    list-style-type: none;
+}
+.ranking-page .main-banner-section .banner-container{
+    background-image: url('grap_bg.jpg');
+}
+.contry_list{
+    float: left;
+    padding-left: 0%;
+}
+.contry_list ul{
+    float: left !important;
+    
+}
+.regins_col{
+    margin-bottom: 100px;
+}
+.regins_col img{
+    height: 60vh;
+}
+/* section region_banner */
+
+.region_banner{
+    padding: 0%;
+    margin: 0;
+}
+.region_country{
+    margin-top: 50px;
+}
+.region_country p span{
+    font-size: 25px;
+} 
+.region_overlay {
+    position: relative;
+    
+  }
+.region_overlay:hover .overlay {
+    opacity: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7c2b47;
+  }
+.overlay .text{
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay p{
+    margin-top: 60px;
+    padding: 22px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 1;
+}
+
+
 @media(min-width:992px){
     .heading h2{
         font-size: 40px;
@@ -482,13 +595,13 @@ padding: 50px 0px!important;
         margin-left: -32px;
     }
     .wine_inner{
-        margin-bottom :30px;
+        margin-bottom :0px;
           
         }
     .heading h2{
         font-size: 32px;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         }
     .inner{
         margin-left: 0px;
@@ -504,7 +617,10 @@ padding: 50px 0px!important;
     }
     .halfwhitebg{
         background: #ffffff;
-        min-height: 360px;
+       
+    }
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+        margin-bottom: 10px;
     }
     .blackoverlay{overflow: hidden;padding:5px 20px!important;}
     .blackoverlay .social-list{top:inherit!important;}
@@ -544,7 +660,7 @@ padding: 50px 0px!important;
         margin-bottom: 42px;
     }
     .icons{
-        margin-top: -24px;
+        margin-top: 0px;
     }
     .heading h2 {
         font-size: 16px;
@@ -554,25 +670,28 @@ padding: 50px 0px!important;
     }
     .inner{
         margin-left:0px;
-        font-size: 14px;
+        font-size: 13px;
         padding: 0px;
     }
     .started_filling{
         margin-bottom: 40px;
+        margin-left: 0px;
+        margin-top: -30px;
+
     }
     .inner p{
-        padding: 20px 0;
+        padding: 20px 10px;
     }
     .icons_bar{
-        padding-left: 0px;
+        padding-left: 10px;
          margin-top: 0px;
         overflow: hidden;
         padding-right: 0%;
         margin-bottom: 20px;
     }
     .blackoverlay{
-       padding-left:0px;
-       margin-top: -45px;
+       padding:0px !important;
+    
     }
     .feature-section .img-wrapper .image-container .info-container .text-container{
        font-size: 16px;
@@ -607,17 +726,17 @@ padding: 50px 0px!important;
         font-size: 34px;
     }
     .inner_textp{
-        padding-left: 0px;
+        padding-left: 0px !important;
         padding-left: 0px;
         margin-bottom: 0px;
     }
     .icons_col{
        padding-right: 0px !important; 
        padding-left: 0px !important; 
-       margin-top: 50px !important;
+       margin-top: 0px !important;
     }
     .bottom_logo {
-        margin-top: 50px;
+        margin-top: 16px;
     }
     .join-wrapper{
         width: 100%;
@@ -633,6 +752,7 @@ padding: 50px 0px!important;
     }
     .bootom_footer{
         text-align: center !important;
+        padding-top: 0 !important
     }
     .social_icons_bot{
 
@@ -661,9 +781,11 @@ padding: 50px 0px!important;
     }
     .mobpadd15px{
         padding: 15px;
+
     }
     .marbot100px{
         margin-bottom: 100px;
+        padding-right: 0 !important;
     }
     .navbar-toggle{
         background: #ffffff!important;
@@ -680,4 +802,30 @@ padding: 50px 0px!important;
    .navbar-collapse{
        margin-top: 15px;
    }
+   .heading h2::after, .heading h2::before{
+    width: 12%;
+}
+.heading h2::before{
+    left: 30px !important; 
+}
+.heading h2::after{
+    right: 30px !important;   
+}
+.feature-section .img-wrapper .image-container .info-container .title-container{
+    font-size: 18px !important;
+}
+.feature-section .img-wrapper .image-container .info-container .text-container{
+    padding-top: 23px !important;
+}
+.feature-section {
+    margin-top: 0px !important;
+
+}
+.learn-more-section .progress-container .progress-list .progress-item{
+    padding-left: 22px !important;
+}
+.marbot100px{
+    margin-bottom: 50PX;
+}
+
 }

@@ -6,10 +6,11 @@
             <div class="container">
                 <div class="row">
                     <div class="category-title col-xs-12 col-sm-12 col-lg-12">
+                    <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">Grapes</h1>
                         <span class="separator">Top Grape|</span>
                         <span class="date-container "> <%= DateTime.now.strftime "%B %Y" %></span>
                     </div>
-                    <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">Grape</h1>
+
                 </div>
             </div>
         </div>
@@ -17,93 +18,68 @@
 </section>
 <!--End of Banner section-->
 
-<!--Start of places list section-->
-<section class="places-list-section">
-    <% @grapes.each_with_index do |grape, index| %>
-    <div class="social-modal">
-        <div class="container">
-          <h1>Share</h1>
-          <%= social_share_button_tag(grape.name, :image => asset_path("images-places-#{index+1}.png")) %>
-          <span class="glyphicon glyphicon-remove-circle"></span>
-      </div>                          
+
+<section class="learn-more-section">
+<div class="container-fluid">
+<div class="col-sm-12">
+  <div class="heading text-center">
+
   </div>
-  <!--Start of place cont-->
-  <div class="container-fluid no-padding">
-    <div class="place-container container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-4 image-container no-padding hidden-sm hidden-xs">
-                  <img src="uploads/<%= grape.pic%>" class="img-responsive">
-              </div>
-              <div class="col-md-8 col-sm-12 col-xs-12 info-container">
-                <div class="header-section">
-                    <div class="number-container"><%= index+1 %></div>
-                    <div class="separator"></div>
-                    <div class="name-container">
-                        <div class="title-container"><strong><%= set_title grape.name %><strong></div>
-                    </div>
-                </div>
-                <div class="image-for-mobile hidden-lg hidden-md">
-                    <%= image_tag "public/uploads/Aglianico_del_Vulture_new.jpg", class: 'img-responsive' %>
-                </div>
-                <div class="main-text-container">
-                    <p>
-                      <%= grape.short_des %>
-                  </p>
-              </div>
-              <div class="grape-long-description">
-                <p>
-                    <%= grape.long_des %>
-                </p>
-            </div>
-            <div class="grape-region">
-             <strong class="text-info" >Regions:</strong><span style="margin-left: 14px">
-                <% unless grape.regions == nil %>
-                <% grape.regions.split(',').each do |element| %>
-                <a href="#">
-                  <span class="regions-element "><%=  element %></span>
-                  <% end %>
-              </span>
-          </a>
-          <% end %>
+</div>
+
+      <div class="container mobnopadd">
+        <div class="col-md-6 col-sm-12 col-xs-12 inner_textp mobpadd15px">
+           <img src="assets/grap_bottal.jpg" class="img-responsive" width="100%">
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="inner text-info-container">
+        <p>
+        <strong>So</strong> why are some wines cheap, and others are more expensive? Cheap wines are stock-picked from the vineyards and processed by machinery. The grapes are often damaged or require large amounts of pesticides to help keep rot and decay at bay. Many preservatives are added, lowering sanitation standards and decreasing production costs. When you purchase a cheap bottle of wine, you are paying for pesticides, preservatives, and low quality grapes.
+      </p>
       </div>
-      <div class="wine-supplyer">
-         <strong class="text-info">Supplyer:</strong>
-         <span style="margin-left: 14px">
-            <% unless grape.supply == nil %>
-            <% grape.supply.split(',').each_with_index do |element,index| %>
-            <a href="<%= grape.supply_url.split(',').fetch(index) %>">
-                <span class="regions-element"><%=  element %></span>
-                <% end %>
-            </span>
-        </a>
-        <% end %>
-    </span>
-</div>   
-</div>
-</div>
-</div>
-</div>
-</div>
-<!--end of place container-->                          
-<% end %>    
+       <div class="regins">
+        <span> REGIONS  : </span> MILANO  <span> SUPPLYER  : </span> PERSON2
+       </div>
+      </div>
+
+      </div>
+  
 </section>
 
-<section class="place-slider-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 b_slider_wrapper">
-                <h1>Wine with grape</h1>
-                <div class="b_slider">
-                    <%= image_tag 'download-1.jpg', class: 'b_slider__slide img-responsive' %>
-                    <%= image_tag 'download-2.jpg', class: 'b_slider__slide img-responsive' %>
-                    <%= image_tag 'download-3.jpg', class: 'b_slider__slide img-responsive' %>
-                    <%= image_tag 'download-4.jpg', class: 'b_slider__slide img-responsive' %>
-                    <%= image_tag 'images-wine-3.jpg', class: 'b_slider__slide img-responsive' %>
-                    <%= image_tag 'images-wine-1.jpg', class: 'b_slider__slide img-responsive' %>
-                </div>
-            </div>
+<!--Start of regions -->
+<section class="regins_col">
+  <div class="container">
+    <div class="col-md-6">
+       <h2>REGIONS</h2>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+       <div class="">
+       <ul>
+            <li> <a href=""> </a> <span> Scotland </span>    </li>
+            <li> <a href=""> </a> <span> Wales</span>    </li>
+            <li> <a href=""> </a> <span>North West </span>   </li>
+            <li> <a href=""> </a> <span>London South East </span>  </li>
+          </ul>
         </div>
     </div>
+
+    <div class="col-md-6 ">
+       <h2>FROM OUR BLOG</h2>
+       <div class="from_our_blog">
+        <div class="col-md-6">
+           <img src="assets/lady_back.jpg" class="img-responsive" alt="">
+        </div>
+        <div class="col-md-6">
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+           <button> READ MORE </button>
+        </div>
+
+       </div>
+    </div>
+  </div>
 </section>
+
+
+
+
+
 
