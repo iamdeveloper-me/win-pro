@@ -91,16 +91,24 @@ a  {
     top: 50%;
 }
 .heading h2::before{
-    left: 105px !important; 
+    left: 00px !important; 
 }
 .heading h2::after{
-    right: 105px !important;   
+    right: 10px !important;   
 }
+/* .place_container_after::after{
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    z-index: 999999;
+    background-color: #000000;
+   
+} */
 .started_filling{
     margin-bottom: 50px;
     margin-top: 66px;
     padding-left: 0;
-    margin-left: 100px;
 }
 .started_filling1{
     padding: 0%;
@@ -233,10 +241,10 @@ margin-top: 35px;
 }
 
 .bootom_footer{
-    background-color: #707838!important;
+    background-color: #4b5502!important;
     color: #ffffff;
     padding-top: 20px;
-    border-top: 1px solid #ffffff !important;
+
 }
 .bootom_footer p{
     font-size: 12px;
@@ -298,8 +306,9 @@ margin-top: 35px;
    }
    .newsletter_input{
     margin: 0px;
-    padding: 5px;
+    width: 170px;
     border: 0px;
+    padding-left: 10px;
     margin-right: -4px;
     border-right: 1px solid #333333;
 }
@@ -309,7 +318,7 @@ margin-top: 35px;
  border: 0px solid #fff;
  box-shadow: none;
  text-transform: capitalize;
- padding: 10px 20px; 
+ 
 }
 footer a{color:#fff!important;}
 footer a:hover{color:#fff!important;opacity: .6;}
@@ -485,7 +494,7 @@ min-height: 330px;
     color: #218212;
 }
 .regins :first-child{
-    padding-left: 22px;
+    padding-left: 0px;
 }
 .regins :last-child{
     margin-left: 20px;
@@ -502,6 +511,8 @@ min-height: 330px;
 }
 .ranking-page .main-banner-section .banner-container{
     background-image: url('grap_bg.jpg');
+    max-height: 350px;
+    min-height: 226px;
 }
 .contry_list{
     float: left;
@@ -512,11 +523,43 @@ min-height: 330px;
     
 }
 .regins_col{
-    margin-bottom: 100px;
+    margin-top: 50px;
 }
-.regins_col img{
-    height: 60vh;
+
+.regins_col ul li span{
+    margin-left: 0px;
+    font-size: 13px;
 }
+.milano_para{
+    background-color: #ccc;
+    margin-top: 66px;
+    padding: 66px;
+    padding-top: 0px;
+    padding-left: 30px;
+}
+.regins_col ul li{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.regins_col .pad_left{
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-right: 0;
+}
+.from_our_blog{
+    min-height: 155px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.btn_suc .btn-success{
+    border-radius: 20px !important;
+    padding: 1px 30px !important;
+    background-color: #707838 !important;
+}
+.blog_pad .paragrag{
+    padding-top: 5px;
+}
+
 /* section region_banner */
 
 .region_banner{
@@ -526,44 +569,55 @@ min-height: 330px;
 .region_country{
     margin-top: 50px;
 }
-.region_country p span{
-    font-size: 25px;
-} 
-.region_overlay {
-    position: relative;
+.region_bg p{
     
-  }
-.region_overlay:hover .overlay {
-    opacity: 1;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #7c2b47;
-  }
-.overlay .text{
-    color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 22%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    background-color: #d6ab00;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin-bottom: 30px;
+   
 }
-.overlay p{
-    margin-top: 60px;
-    padding: 22px;
-    color: #fff;
-    font-size: 14px;
-    opacity: 1;
+.roam p{
+    padding: 12px;
+    background-color: #ccc;
+    color: #ffffff;
+    min-height: 170px;
+}
+
+/* Wines page start */
+.ranking-page .places-list-section .place-container .info-container .header-section .name-container .title-container{
+    font-size: 19px;
+}
+
+.wine-region strong{
+    font-size: 16px;
+    color: green !important;
+}
+.wine-supplyer strong{
+    color: green !important;
+}
+.ranking-page .places-list-section .container-fluid:nth-child(even){
+    margin-top: 35px;
+}
+.wine-region span{
+    text-transform: capitalize;
+}
+.wine-supplyer span{
+    text-transform: capitalize;
+}
+.place_container_after{
+    border: 1px solid green;
+    padding: 20px;
+    padding-right: 0px;
+}
+.ranking-page .places-list-section .place-container .info-container .header-section .name-container .title-container{
+    color: green !important;
+}
+.ranking-page .places-list-section .place-container .info-container .header-section .number-container{
+    color: green !important;
 }
 
 
@@ -826,6 +880,43 @@ min-height: 330px;
 }
 .marbot100px{
     margin-bottom: 50PX;
+}
+/* Grape css*/
+.milano_para{
+    margin-top: 0 !important;
+}
+.regins_col{
+    margin-top: 30px;
+}
+.blog_pad{
+    margin-top: 50px;
+}
+.btn_suc button{
+    width: 100%;
+}
+.milano_para p{
+    padding: 20px 0px;
+}
+.pad_left_country{
+    padding-left: 0;
+}
+
+/* wines css start*/
+.ranking-page .main-banner-section .banner-container{
+    max-height: 150px;
+    min-height: 100px;
+}
+.ranking-page .main-banner-section .banner-container .category-title{
+    margin-top: 7%;
+    text-align: center !important;
+}
+.ranking-page .main-banner-section .banner-container .places-container{
+    text-align: center !important;
+    margin-top: 0px;
+    font-size: 28px;
+}
+.info-container{
+    padding-top: 0px !important;
 }
 
 }

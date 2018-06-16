@@ -1,28 +1,28 @@
 <% provide(:title, "Regions Page") %>
-<% provide(:body_class, "regions-page") %>
-<section class="region_section">
-  <div class="container-fluid">
-   <div class="col-md-12 region_banner">
-      <img src="assets/region_bg.jpg" class="img-responsive" alt="">
-   </div>
-  </div>
-</section>
+  <% provide(:body_class, "regions-page") %>
+    <section class="region_section">
+      <div class="container-fluid">
+        <div class="col-md-12 region_banner">
+          <img src="assets/region_bg.jpg" class="img-responsive" alt="">
+        </div>
+      </div>
+    </section>
 
-<section class="region_country">
-  <div class="container">
-    <div class="col-md-12">
-      <% @regions && @regions.each do |region| %>
-      <div class="col-md-4 region_overlay">
-      <p> <span> <%= region %> </span>
-          <a href=""><img src="assets/<%= region %>.jpg" class="img-responsive" width="100%" alt=""> </a> 
+    <section class="region_country">
+      <div class="container">
+        <div class="col-md-12">
+          <% @regions && @regions.each do |region| %>
+            <div class="col-md-4 region_bg  ">
 
-          <div class="overlay">
-              <div class="text">Hello World</div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+              <a href="">
+                <p>
+                  <%= region %>
+                </p>
+              </a>
+
             </div>
-        </p>
-      </div> 
-      <% end %>
-</div>
-</div>
-</section>
+            <% end %>
+
+        </div>
+      </div>
+    </section>
