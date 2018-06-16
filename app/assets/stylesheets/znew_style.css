@@ -565,6 +565,13 @@ min-height: 330px;
 .region_banner{
     padding: 0%;
     margin: 0;
+    position: relative;
+}
+.region_banner .heading_reg{
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    left: 44%;
 }
 .region_country{
     margin-top: 50px;
