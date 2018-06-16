@@ -32,11 +32,17 @@
     <div class="place-container container">
         <div class="row ">
             <div class="col-md-12 ">
-                <div class="col-md-4 place_container_after image-container no-padding hidden-sm hidden-xs">
+                <!-- <div class="col-md-4 place_container_after image-container no-padding hidden-sm hidden-xs">
                   <a href="<%= wines_path%>">
                       <img src="uploads/<%= wine.pic%>" class="img-responsive">
                   </a>
-              </div>
+              </div> -->
+              <div class="col-md-4 place_container_after image-container no-padding">
+                <a href="<%= wines_path%>">
+                    <img src="uploads/<%= wine.pic%>" class="img-responsive">
+                </a>
+            </div>
+
               <div class="col-md-8 col-sm-12 col-xs-12 info-container">
                 <div class="header-section">
                     <div class="number-container"><%= index+1 %></div>
@@ -45,9 +51,9 @@
                         <div class="title-container"><%= set_title wine.name %></div>
                     </div>
                 </div>
-                <div class="image-for-mobile hidden-lg hidden-md">
+                <!-- <div class="image-for-mobile hidden-lg hidden-md">
                     <%= image_tag "images-places-#{index+1}.png", class: 'img-responsive' %>
-                </div>
+                </div> -->
                 <div class="main-text-container">
                     <p>
                       <%= wine.short_des %>

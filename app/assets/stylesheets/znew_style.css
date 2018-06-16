@@ -94,17 +94,9 @@ a  {
     left: 00px !important; 
 }
 .heading h2::after{
-    right: 10px !important;   
+    right: 0px !important;   
 }
-/* .place_container_after::after{
-    width: 100%;
-    height: 2px;
-    content: '';
-    position: absolute;
-    z-index: 999999;
-    background-color: #000000;
-   
-} */
+
 .started_filling{
     margin-bottom: 50px;
     margin-top: 66px;
@@ -551,10 +543,18 @@ min-height: 330px;
     border: 2px solid green;
     border-radius: 10px;
 }
-.btn_suc .btn-success{
+/* .btn_suc .btn-success{
     border-radius: 20px !important;
     padding: 1px 30px !important;
     background-color: #707838 !important;
+} */
+.btn_suc{
+    
+    border-radius: 20px;
+    text-align: center;
+    background-color: #707838;
+    color: #fff;
+    padding: 3px 0;
 }
 .blog_pad .paragrag{
     padding-top: 5px;
@@ -598,6 +598,7 @@ min-height: 330px;
 }
 .wine-supplyer strong{
     color: green !important;
+    font-size: 16PX;
 }
 .ranking-page .places-list-section .container-fluid:nth-child(even){
     margin-top: 35px;
@@ -618,6 +619,9 @@ min-height: 330px;
 }
 .ranking-page .places-list-section .place-container .info-container .header-section .number-container{
     color: green !important;
+}
+.icons_col{
+    padding-left: 30px;
 }
 
 
@@ -915,8 +919,11 @@ min-height: 330px;
     margin-top: 0px;
     font-size: 28px;
 }
-.info-container{
-    padding-top: 0px !important;
+.ranking-page .header-section{
+    margin-top: 45px;
+}
+.ranking-page .places-list-section .container-fluid:nth-child(even){
+    margin-bottom: -50px;
 }
 
 }
