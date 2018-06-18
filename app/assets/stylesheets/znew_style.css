@@ -233,7 +233,7 @@ margin-top: 35px;
 }
 
 .bootom_footer{
-    background-color: #4b5502!important;
+    background-color: #686866!important;
     color: #ffffff;
     padding-top: 20px;
 
@@ -273,6 +273,17 @@ margin-top: 35px;
 .learn-more-section .progress-container .progress-list .progress-item .progress-bar-wrapper{
     max-width: 78%;
     margin-left: 0 !important
+}
+.progress_inner{
+    width:30%;
+    background:#218212;
+}
+.progress_inner1{
+    width:20%;
+    background:#218212;
+}
+.progress_inner2{
+    width:50%;background:#218212;
 }
 .learn-more-section .progress-container .progress-list .progress-item .progress-name-container{
     padding-top:15px;
@@ -473,14 +484,27 @@ min-height: 330px;
   .why_are p{
       margin-left: 30px;
   }
+  .wow_pulse{
+    visibility: visible; animation-iteration-count: 3; animation-name: pulse;
+  }
 /* Grape page start*/
 
 .ranking-page .main-banner-section .banner-container .places-container{
     text-align: left !important;
-    padding-left: 0 !important;
+   
 }
 .ranking-page .main-banner-section .banner-container .category-title{
     text-align: left !important;
+}
+.place_grap{
+    margin-top: 0px !important;
+}
+.pad_left a img{
+    height:153px; 
+    border-radius: 10px;
+}
+.wine_visibi{
+    visibility: visible;
 }
 .regins span{
     color: #218212;
@@ -599,27 +623,17 @@ min-height: 330px;
     font-size: 19px;
 }
 
-.wine-region strong{
-    font-size: 16px;
+.wine-region strong, .wine-supplyer strong{
+    font-size: 14px;
     color: green !important;
-}
-.wine-supplyer strong{
-    color: green !important;
-    font-size: 16PX;
+    width:70px;
+    float: left;
 }
 .ranking-page .places-list-section .container-fluid:nth-child(even){
     margin-top: 35px;
 }
-.wine-region span{
+.wine-region span, .wine-supplyer span{
     text-transform: capitalize;
-}
-.wine-supplyer span{
-    text-transform: capitalize;
-}
-.place_container_after{
-    border: 1px solid green;
-    padding: 20px;
-    padding-right: 0px;
 }
 .ranking-page .places-list-section .place-container .info-container .header-section .name-container .title-container{
     color: green !important;
@@ -630,6 +644,74 @@ min-height: 330px;
 .icons_col{
     padding-left: 30px;
 }
+.place-container{
+    position: relative;
+    border-bottom:1px solid #e5e5e5;
+    padding:15px;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+.place-container img{
+    border:1px solid rgb(180, 179, 179);
+    padding: 5px;
+    margin-top:15px;
+    border-radius: 0px!important;
+    max-width:200px;
+    height: inherit!important;
+}
+.place-container:hover{
+    background: #e5e5e5;
+}
+.place-container:first-child{
+    margin-top:20px!important;
+}
+.place-container:last-child{
+    border-bottom:0px solid #e5e5e5;
+}
+.b_slider_wrapper h1{
+    color: green;
+}
+.slick-track img{
+    border:1px solid #e5e5e5;
+}
+/* make_wine css start*/
+.make_wine .no-padding img{
+    height: 75vh;
+    position: relative;
+    max-height: 350px;
+}
+.make_wine .no-padding h1{
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    left: 35%;
+    
+}
+.make_wine_content{
+    margin-top: 50px;
+}
+.make_wine_content img{
+   
+}
+.make_grap_wine{
+    margin-top: 20px;
+}
+.inner_text_make_wine{
+    border: 1px solid #1c8211;
+    padding: 15px;
+    margin-bottom: 25px;
+   
+}
+a.read_more {
+     background-color: #21800d;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+
 
 
 @media(min-width:992px){
@@ -868,13 +950,13 @@ min-height: 330px;
        margin-top: 15px;
    }
    .heading h2::after, .heading h2::before{
-    width: 12%;
+    width: 20%;
 }
 .heading h2::before{
-    left: 30px !important; 
+    left: 0px !important; 
 }
 .heading h2::after{
-    right: 30px !important;   
+    right: 0px !important;   
 }
 .feature-section .img-wrapper .image-container .info-container .title-container{
     font-size: 18px !important;
@@ -892,6 +974,7 @@ min-height: 330px;
 .marbot100px{
     margin-bottom: 50PX;
 }
+
 /* Grape css*/
 .milano_para{
     margin-top: 0 !important;
@@ -934,3 +1017,4 @@ min-height: 330px;
 }
 
 }
+
