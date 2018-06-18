@@ -24,26 +24,26 @@
 						<b> <a href="#">CUSTOMER SERVICES </a> </b>
 					</p>
 					<ul>
-						<li> <a href="#">Wine of the week </a> </li>
-						<li> <a href="#">Grape of the week </a> </li>
-						<li> <a href="#"> How to make wine </a> </li>
-						<li> <a href="#"> What is your bottle</a>  </li>
-						<li><a href="#">Order Status </a> </li>
-						<li> <a href="#"> How It Works </a>  </li>
-					</ul>
+            <li> <%= link_to "Wine of the week", wine_week_path %> </li>
+            <li> <%= link_to "Grape of the week",grape_week_path %> </li>
+            <li> <%= link_to " How to make wine",make_wine_path %> </li>
+            <li> <%= link_to "What is your bottle",bottle_path %> </li>\
+            <li> <%= link_to "Order Status",order_status_path %> </li>
+            <li> <%= link_to "How It Works",how_works_path %> </li>
+          </ul>
 				</div>
 			</div>
 			<div class="col-md-2 col-xs-12 col-sm-12 inner_textp ">
 				<div class="list">
 					<p>
-						<b><a href="#">ABOUT US </a>  </b>
+            <b> <%= link_to "About",about_path %> </b>
 					</p>
 					<ul>
-						<li> <a href="#"> FAQs </a> </li>
-						<li> <a href="#"> Mobile Solution </a> </li>
-						<li> <a href="#"> Enterprise </a> </li>
-						<li> <a href="#"> UI-UX  </a> </li>
-					</ul>
+            <li> <%= link_to "FAQS",faqs_path %> </li>
+            <li> <%= link_to "Mobile Solution",mobile_solution_path %> </li>
+            <li> <%= link_to "Enterprise",enterprise_path %> </li>
+            <li> <%= link_to "UI-UX",ui_ux_path %> </li>
+          </ul>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-12 inner_textp ">

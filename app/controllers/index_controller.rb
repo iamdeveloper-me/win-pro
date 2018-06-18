@@ -149,4 +149,28 @@ class IndexController < ApplicationController
 		@regions = grape_regions | wine_regions
 	end
 
+  def make_wine
+  end
+
+  def bottle
+  end
+
+  def order_status
+  end
+
+  def how_works
+  end
+
+  def faqs
+  end
+
+  def mobile_solution
+  end
+
+  def enterprise
+  end
+
+  def ui_ux
+  end
+
 end
