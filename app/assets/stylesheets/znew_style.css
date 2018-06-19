@@ -195,7 +195,7 @@ a  {
     padding: 25px;
 }
 footer{
-    background-color: #707838;
+    background-color: #33351a;
     margin-top:50px;
     padding-bottom: 30px !important;
 }
@@ -233,7 +233,7 @@ margin-top: 35px;
 }
 
 .bootom_footer{
-    background-color: #686866!important;
+    background-color: #3f4029!important;
     color: #ffffff;
     padding-top: 20px;
 
@@ -496,9 +496,7 @@ min-height: 330px;
 .ranking-page .main-banner-section .banner-container .category-title{
     text-align: left !important;
 }
-.place_grap{
-    margin-top: 0px !important;
-}
+
 .pad_left a img{
     height:153px; 
     border-radius: 10px;
@@ -561,11 +559,6 @@ min-height: 330px;
     padding-left: 0px;
     margin-top: 0px;
     padding-right: 0;
-}
-.from_our_blog{
-    min-height: 155px;
-    border: 2px solid green;
-    border-radius: 10px;
 }
 /* .btn_suc .btn-success{
     border-radius: 20px !important;
@@ -682,22 +675,19 @@ min-height: 330px;
 }
 .make_wine .no-padding h1{
     position: absolute;
-    top: 50%;
+    top: 2%;
     color: #ffffff;
-    left: 35%;
+    left: 10%;
+    
     
 }
 .make_wine_content{
     margin-top: 50px;
 }
-.make_wine_content img{
-   
-}
 .make_grap_wine{
     margin-top: 20px;
 }
 .inner_text_make_wine{
-    border: 1px solid #1c8211;
     padding: 15px;
     margin-bottom: 25px;
    
@@ -711,7 +701,23 @@ a.read_more {
     text-transform: uppercase;
     
 }
-
+.footer_link_bg{
+    background-image: url('/assets/headtextbg.jpg');
+    height: 100px;;
+    width: 100%;
+    background-size: cover;
+    background-position: 10px -30px;
+    line-height: 100px;
+    color: #ffffff;
+    font-size:24px;
+}
+.footer_link_bg h1{
+    line-height: 100px;
+    color: #ffffff;
+    font-size:24px;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
 
 
 @media(min-width:992px){
@@ -981,7 +987,18 @@ a.read_more {
 }
 .regins_col{
     margin-top: 30px;
+  
 }
+.regins_col_head{
+    position: relative;
+}
+.regins_col_head span{
+    position: absolute !important;
+    top: 28% !important;
+    left: 28% !important;
+    color: #fff !important;
+}
+
 .blog_pad{
     margin-top: 50px;
 }
