@@ -173,4 +173,7 @@ class IndexController < ApplicationController
   def ui_ux
   end
 
+  def contact_us
+  end
+
 end

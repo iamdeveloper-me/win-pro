@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   get '/mobile_solution',to: 'index#mobile_solution'
   get '/enterprise',to: 'index#enterprise'
   get '/ui_ux',to: 'index#ui_ux'
+  get '/contact_us',to: 'index#contact_us'
+
 
   get '/wines', to: 'wines#index'
   get '/wine_week', to: 'wines#week'
