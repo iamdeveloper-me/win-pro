@@ -1720,10 +1720,10 @@ footer {
     .banner-container {
       background-size: cover;
       background-repeat: no-repeat;
-      min-height: 333px;
+      min-height: 350px !important;
       background-position: center 53%;
       &.sf {
-        background-image: url(asset_path('sf-back.jpg'));
+        background-image: url(asset_path('headtextbg.jpg'));
       }
       .title-container {
         margin-top: 15% !important;
