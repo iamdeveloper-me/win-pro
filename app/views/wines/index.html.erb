@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="category-title col-xs-12 col-sm-12 col-lg-12">
-                        <span class="separator" style="margin-left: 20px;" >Top Wine|</span>
+                        <span class="separator" style="margin-left: 20px;" >Top Wine |</span>
                         <span class="date-container "> <%= DateTime.now.strftime "%B %Y" %></span>
                     </div>
                     <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">Wine</h1>
@@ -16,26 +16,10 @@
     </div>
 </section>
 <!--End of Banner section-->
-
 <!--Start of places list section-->
 <section class="places-list-section">
     <% @wines.each_with_index do |wine, index| %>
-    <!-- <div class="social-modal">
-        <div class="container">
-          <h1>Share</h1>
-          <%= social_share_button_tag(wine.name, :image => asset_path("images-places-#{index+1}.png")) %>
-          <span class="glyphicon glyphicon-remove-circle"></span>
-      </div>                          
-  </div> -->
-  <!--Start of place cont-->
     <div class="place-container container no-padding">
-       
-            
-                <!-- <div class="col-md-4 place_container_after image-container no-padding hidden-sm hidden-xs">
-                  <a href="<%= wines_path%>">
-                      <img src="uploads/<%= wine.pic%>" class="img-responsive">
-                  </a>
-              </div> -->
               <div class="col-md-3 no-padding">
                 <a href="<%= wines_path%>">
                     <img src="uploads/<%= wine.pic%>" class="img-responsive">
@@ -50,9 +34,6 @@
                         <div class="title-container"><%= set_title wine.name %></div>
                     </div>
                 </div>
-                <!-- <div class="image-for-mobile hidden-lg hidden-md">
-                    <%= image_tag "images-places-#{index+1}.png", class: 'img-responsive' %>
-                </div> -->
                 <div class="main-text-container">
                     <p>
                       <%= wine.short_des %>
@@ -88,29 +69,8 @@
                     <% end %>
                 </span>
             </div>
-
-
-
 </div>
 </div>
 <!--end of place container-->                          
 <% end %>    
 </section>
-<!-- <section class="place-slider-section">
-  <div class="container">
-    <div class="row place_padd_bot">
-      <div class="col-md-12 b_slider_wrapper">
-        <h1>Related wines</h1>
-        <div class="b_slider">
-          <%= image_tag 'Aglianico_del_Vulture_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Albarola_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
-          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->

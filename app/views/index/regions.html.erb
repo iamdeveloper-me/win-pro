@@ -1,32 +1,84 @@
 <% provide(:title, "Regions Page") %>
   <% provide(:body_class, "regions-page") %>
     <section class="region_section">
-      <div class="container-fluid">
-        <div class="col-md-12 region_banner">
-          <img src="assets/region_bg.jpg" class="img-responsive" alt="">
 
-          <div class="heading_reg">
-            <h2> Region </h2>
-          </div>
+    <div class="container-fluid no-padding">
+    <div class="banner-container region_banner">
+        <div class="container">
+            <div class="row">
+
+            <div class="category-title col-xs-12 col-sm-12 col-lg-12">
+            <span class="separator" style="margin-left: 20px;" >Top Regions |</span>
+            <span class="date-container "></span>
         </div>
-      </div>
-    </section>
+        <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">Regions</h1>
+    </div>
 
-    <section class="region_country">
-      <div class="container">
-        <div class="col-md-12">
-          <% @regions && @regions.each do |region| %>
-            <div class="col-md-4 region_bg  ">
 
-              <a href="">
-                <p>
-                  <%= region %>
-                </p>
-              </a>
+
+
+                
 
             </div>
-            <% end %>
-
         </div>
-      </div>
+    </div>
+</div>
+
     </section>
+<!--region_country-->
+
+<section class="learn-more-section">
+        <div class="container mobnopadd">
+            <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px">
+                <img src="assets/regions_sidehead.jpg" class="img-responsive" width="100%">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
+                <div class="inner text-info-container">
+                    <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div class="col-md-12 region_bg">
+                    <ul>
+              <% @regions && @regions.each do |region| %>
+                <li class="col-sm-6">
+              
+                    <p>
+                      <%= region %>
+                    </p>
+                  
+    
+                </li>
+                <% end %>
+                </ul>
+            </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="regins_col">
+    <div class="container">
+        <div class="col-md-4 regins_col_head">
+            <h3>GRAPES</h3>
+            <a href="grapes">
+                <img class="img-responsive" src="/assets/grapes_head.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-4 regins_col_head">
+            <h3>ABOUT US</h3>
+            <a href="about">
+                <img class="img-responsive" src="/assets/about_head.jpg" alt=""> </a>
+        </div>
+        <div class="col-md-4 regins_col_head">
+            <div class="from_our_blog">
+                <h3>FROM OUR BLOG</h3>
+                <a href="blogs">
+                    <img class="img-responsive" src="/assets/blog_head.jpg" class="img-responsive" alt=""> </a>
+            </div>
+        
+        </div>
+    </div>
+</section>
