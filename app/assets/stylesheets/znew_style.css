@@ -26,7 +26,7 @@ a  {
 }
 .navbar{
     margin-bottom:0px;
-    padding: 15px 0px 1px 0px;
+    padding: 15px 0px 15px 0px;
 }
 .logo a{
     float: left;
@@ -37,6 +37,7 @@ a  {
 .navbar-nav > li > a{
     font-size:20px!important;
     color:#21800d; 
+    margin-left: 20px;
 }
 .nav > li > a:hover, .nav > li > a:focus{
     background: transparent;
@@ -195,7 +196,7 @@ a  {
     padding: 25px;
 }
 footer{
-    background-color: #222222;
+    background-color: #a1862f;
     margin-top:50px;
     padding-bottom: 30px !important;
 }
@@ -233,7 +234,7 @@ margin-top: 35px;
 }
 
 .bootom_footer{
-    background-color: #222222!important;
+    background-color: #a1862f!important;
     color: #ffffff;
     padding-top: 20px;
 
@@ -264,8 +265,30 @@ margin-top: 35px;
     width: 80px;
     height: 80px;
 }
+.from_our_blog{
+    padding: 10px 10px 20px 10px!important;
+    margin-top: 30PX;
+    border-top: 1px solid #ccc;
+}
+
+
+.bortop1px {
+    border-top: 1px solid #ccc;
+}
+
+.from_our_blog a, .regins_col_head a{
+    text-decoration: underline!important;
+    font-weight: bold;
+}
+.from_our_blog h3{
+    margin: 0px;
+    padding: 10px 0px;
+}
 .learn-more-section .progress-container .progress-list{
     padding-right: 0;
+}
+.nopadd{
+    padding: 0px!important;
 }
 .container .mobnopadd{
     padding-left: 0px !important;
@@ -525,7 +548,7 @@ min-height: 330px;
 }
 .ranking-page .main-banner-section .banner-container{
     background-image: url('grap_bg.jpg');
-    max-height: 350px;
+    max-height: 400px;
     min-height: 226px;
 }
 .contry_list{
@@ -623,7 +646,7 @@ padding-left: 5px;
     background-image: url(/assets/region_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 350px;
+    min-height: 400px;
     background-position: center 50%;
     width: 100%;
 }
@@ -778,6 +801,9 @@ a.read_more {
     margin-left: 22px;
 }
 
+.martop30px{
+    margin-top: 30px!important;
+}
 
 @media(min-width:992px){
     .heading h2{
