@@ -180,6 +180,7 @@ class IndexController < ApplicationController
   end
 
   def contact_us
+    @contact = Contact.find_by(email: "SF@Grapedia.com")
   end
 
 end

@@ -1,5 +1,3 @@
-
-
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <section class="make_wine">
     <div class="container-fluid footer_link_bg">
@@ -9,6 +7,7 @@
     </div>
 </section>
 <!-- End of banner  -->
+
  <div class="contact-pageheader">
         <div class="container">
             <div class="row">
@@ -22,19 +21,27 @@
                         <div class="contact-section">
                             <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
                             <div class="contact-info">
-                                <p>157 New Kent Rd, Borough, London SE1 4AG, UK</p>
+                                <p>
+                                  <%= @contact.try(:address) %>
+                                </p>
                             </div>
                         </div>
                          <div class="contact-section">
                             <div class="contact-icon"><i class="fa fa-phone"></i></div>
                             <div class="contact-info">
-                             <p>(000) 123 456789</p>   
+                             <p>
+                               <%= @contact.try(:contact_number) %>
+                             </p>
                             </div>
                         </div>
                          <div class="contact-section">
                             <div class="contact-icon"><i class="fa fa-envelope"></i></div>
                             <div class="contact-info">
-                                <a href="mailto:SF@Grapedia.com?Subject=Hello%20again" target="_top"> <p>SF@Grapedia.com</p> </a> 
+                                <a href="mailto:<%= @contact.try(:email) %>?Subject=Hello%20again" target="_top">
+                                  <p>
+                                    <%= @contact.try(:email) %>
+                                  </p>
+                                </a>
                             </div>
                         </div>
                     </div>
