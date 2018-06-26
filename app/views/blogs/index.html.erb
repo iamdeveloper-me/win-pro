@@ -25,22 +25,23 @@
     <div class="row">
       <div class="members-list col-xs-12 col-md-12">
         <% @blogs.each do |blog| %>
-          <%= link_to(blog) do %>
-            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 no-padding team-member">
-              <%= image_tag "/uploads/" + blog.pic , class: 'img-responsive', alt: blog.pic %>
-
-              <div class="info-container">
-                <div class="name-container">
-                  <%= blog.title %>
-                </div>
-
-              </div>
+            <div class="col-md-12 info-text-container blogtextreapt">
+            <div class="blog_hed no-padding text-left">
+                <h3><%= blog.title %></h3>
             </div>
-          <% end %>
+            <div class="blogimg"><%= image_tag "/uploads/" + blog.pic , class: 'img-responsive', alt: blog.pic %></div>
+           
+             <p class="text-left readmoretextblog">
+             <%= blog.des %>
+             </p>
+             <p class="text-left">
+             <%= link_to(blog) do %>
+              Read More  <% end %>
+              </p>
+            </div>
+         
 
-          <p>
-            <%= blog.des %>
-          <p>
+        
         <% end %>
       </div>
     </div>

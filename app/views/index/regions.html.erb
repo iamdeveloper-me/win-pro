@@ -28,7 +28,7 @@
 <!--region_country-->
 
 <section class="learn-more-section">
-        <div class="container mobnopadd">
+        <div class="container mobnopadd listdetail">
             <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px">
                 <img src="assets/regions_sidehead.jpg" class="img-responsive" width="100%">
             </div>
@@ -62,15 +62,16 @@
     <div class="col-md-12 regins_col_head">
 <div class="bortop1px"></div>
             <div class="col-md-6 regins_col_head">
-                  <h3><%= @grape_detail.try(:name) %></h3>
-
+                  <h3>Grapes</h3>
                   <div class="col-sm-6 nopadd">
-                  <img class="img-responsive" src="/assets/grapes_head.jpg" alt="">
-                  </div>
+                  <img class="img-responsive" src="/assets/grapes_head.jpg" alt="">  </div>
                   <div class="col-sm-6">
-                    <p>
-                      <%= @grape_detail.try(:short_des) %> <%= link_to "Read More", grapes_path %>
-                     </p>
+                  
+                  <p><strong><%= @grape_detail.try(:name) %></strong></p>
+                    <p class="readmoretext">
+                      <%= @grape_detail.try(:long_des) %> 
+                    </p>
+                    <%= link_to "Read More", grapes_path %>
                   </div>
          
                 </div>
@@ -81,9 +82,10 @@
                     <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
                     </div>
                     <div class="col-sm-6">
-                      <p>
-                        <%= @about_detail.try(:description) %> <%= link_to "Read More", about_path %>
-                      </p>
+                    <p class="readmoretext">
+                        <%= @about_detail.try(:description) %>  </p>
+                        <%= link_to "Read More", about_path %>
+                    
                     </div>
                 </div>
 

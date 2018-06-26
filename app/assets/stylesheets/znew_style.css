@@ -280,6 +280,9 @@ margin-top: 35px;
     text-decoration: underline!important;
     font-weight: bold;
 }
+.regins_col_head img{
+    margin-bottom: 10px;
+}
 .from_our_blog h3{
     margin: 0px;
     padding: 10px 0px;
@@ -501,9 +504,7 @@ min-height: 330px;
   .search-section .container-fluid .search-field-container .search-wrapper .search_field_input:focus, .select2-drop-mask:focus{
       box-shadow: none!important;
   }
-  .mobpadd15px{
-      padding-left: 0;
-  }
+
   .why_are p{
       margin-left: 30px;
   }
@@ -526,6 +527,10 @@ min-height: 330px;
 }
 .wine_visibi{
     visibility: visible;
+}
+.regins{
+    font-size: 13px;
+    text-transform: uppercase;
 }
 .regins span{
     color: #218212;
@@ -567,9 +572,11 @@ min-height: 330px;
     margin-left: 0px;
     font-size: 13px;
 }
+.listdetail{
+    margin-top:30px;
+}
 .milano_para{
     background-color: #ccc;
-    margin-top: 66px;
     padding: 66px;
     padding-top: 0px;
     padding-left: 30px;
@@ -754,8 +761,34 @@ padding-left: 5px;
     top: 2%;
     color: #ffffff;
     left: 10%;
-    
-    
+}
+.imgheight160px{
+    max-height: 160px!important;
+}
+.readmoretext {
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+line-height: 16px;     /* fallback */
+max-height: 150px;      /* fallback */
+-webkit-line-clamp: 8; /* number of lines to show */
+-webkit-box-orient: vertical;
+}
+.readmoretextblog {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;     /* fallback */
+    max-height: 100px;      /* fallback */
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    }
+.blogimg{
+    margin:20px 0px;
+    overflow: hidden;
+}
+.mobpadd100px{
+    margin-top: 150px !important;
 }
 .make_wine_content{
     margin-top: 50px;
@@ -803,6 +836,13 @@ a.read_more {
 
 .martop30px{
     margin-top: 30px!important;
+}
+.wine-long_description{
+    margin-top: 30px !important;
+    margin-bottom:50px !important;
+} 
+.wine-region:first-child .wine-supplyer:first-child{
+padding-left: 0px;
 }
 
 @media(min-width:992px){
@@ -965,8 +1005,9 @@ a.read_more {
     }
     .inner_textp{
         padding-left: 0px !important;
-        padding-left: 0px;
         margin-bottom: 0px;
+        text-align: center!important;
+
     }
     .icons_col{
        padding-right: 0px !important; 
@@ -1019,8 +1060,10 @@ a.read_more {
     }
     .mobpadd15px{
         padding: 15px;
+        padding-left: 0;
 
     }
+   
     .marbot100px{
         margin-bottom: 100px;
         padding-right: 0 !important;
@@ -1248,4 +1291,14 @@ a.read_more {
 .contact-pageheader .contact-icon i{
     font-size: unset;
 }
-
+.listimgview{
+    margin: auto;
+    max-width: 100%;
+    max-height: 350px;
+}
+.paddtopbot25px{
+    padding: 25px 0px!important;
+}
+.about-us-page .team-info-container{
+    margin-top: 20px!important;
+}

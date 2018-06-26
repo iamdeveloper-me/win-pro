@@ -22,20 +22,18 @@
 
 <section class="learn-more-section">
   <% @grapes.each_with_index do |grape, index| %>
-    <div class="container mobnopadd">
-      <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px">
-        <a href="<%= grapes_path %>">
-          <img src="uploads/<%= grape.pic %>" class="img-responsive">
-        </a>
-        <!-- <img src="assets/grap_bottal.jpg" class="img-responsive" width="100%"> -->
+    <div class="container mobnopadd listdetail">
+      <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px text-center paddtopbot25px">
+        
+          <img src="uploads/<%= grape.pic %>" class="listimgview">
+       
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
         <div class="inner text-info-container">
           <div class="header-section">
-            <div class="number-container"><%= index+1 %></div>
-            <div class="separator"></div>
+            
             <div class="name-container">
-              <div class="title-container"><%= set_title grape.name %></div>
+              <div class="title-container"> <%= index+1 %> <%= set_title grape.name %></div>
             </div>
           </div>
           <span>
@@ -76,9 +74,9 @@
             <img class="img-responsive" src="/assets/regions_head.jpg" alt="">
           </div>
           <div class="col-sm-6">
-            <p>
-              <%= @region_detail.try(:description) %> <%= link_to "Read More", regions_path %>
-            </p>
+          <p class="readmoretext">
+              <%= @region_detail.try(:description) %> </p>
+              <%= link_to "Read More", regions_path %>
           </div>
         </div>
 
@@ -89,23 +87,25 @@
             <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
           </div>
           <div class="col-sm-6">
-            <p>
-              <%= @about_detail.try(:description) %> <%= link_to "Read More", about_path %>
+            <p class="readmoretext">
+              <%= @about_detail.try(:description) %> 
             </p>
+            <%= link_to "Read More", about_path %>
           </div>
         </div>
 
         <div class="col-md-12 from_our_blog">
-          <h3> <%= @blog_detail.try(:title) %> </h3>
-
+          <h3>Blog</h3>
           <div class="col-sm-4 nopadd">
             <%= image_tag "/uploads/" + @blog_detail.pic , class: 'img-responsive', alt: @blog_detail.pic %>
           </div>
 
           <div class="col-sm-8">
-              <p>
+          <p><strong><%= @blog_detail.try(:title) %></strong></p>
+              <p class="readmoretext">
                 <%= @blog_detail.try(:des) %> <%= link_to "Read More", blogs_path %>
               </p>
+              <a href="#">Read More</a>
           </div>
         </div>
       </div>

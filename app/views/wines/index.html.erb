@@ -17,63 +17,66 @@
 </section>
 <!--End of Banner section-->
 <!--Start of places list section-->
-<section class="places-list-section">
-    <% @wines.each_with_index do |wine, index| %>
-    <div class="place-container container no-padding">
-              <div class="col-md-3 no-padding">
-                <a href="<%= wines_path%>">
-                    <img src="uploads/<%= wine.pic%>" class="img-responsive">
-                </a>
-            </div>
 
-              <div class="col-md-8 col-sm-12 col-xs-12 info-container">
-                <div class="header-section">
-                  <div class="number-container"><%= index+1 %></div>
-                  <div class="separator"></div>
-                  <div class="name-container">
-                    <div class="title-container"><%= set_title wine.name %></div>
-                  </div>
-                </div>
-              <div class="wine-long_description">
-                <span>
-                  <%= wine.long_des %>
-                </span>
-            </div>
-            <div class="regins">
-              <span>Regions:</span>
-              <% unless wine.regions == nil %>
-                  <% wine.regions.split(',').each do |element| %>
-                    <a href="#"><%= element %></a>
-                  <% end %>
-              <% end %>
+<section class="learn-more-section">
+<% @wines.each_with_index do |wine, index| %>
 
-              <span>Supplyer:</span>
-              <% unless wine.supply == nil %>
-                <% wine.supply.split(',').each_with_index do |element,index| %>
-                  <a href="<%= wine.supply_url.split(',').fetch(index) %>"><%=  element %>
-                  </a>
-                <% end %>
-              <% end %>
+
+    <div  class="container mobnopadd listdetail">
+      <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px  text-center paddtopbot25px">
+     
+      <img src="uploads/<%= wine.pic%>" class="listimgview">
+  
+         </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
+        <div class="inner text-info-container">
+          <div class="header-section">
+            
+            <div class="name-container">
+              <div class="title-container"> <%= index+1 %> <%= set_title wine.name %></div>
             </div>
-</div>
-</div>
-<!--end of place container-->                          
-<% end %>    
+          </div>
+          <span>
+          <%= wine.long_des %>
+          </span>
+        </div>
+        <div class="regins">
+          <span>REGIONS : </span> 
+          <% unless wine.regions == nil %>
+          <% wine.regions.split(',').each do |element| %>
+            <a href="#"><%= element %></a>
+          <% end %>
+      <% end %>
+
+          <span> SUPPLYER : </span> 
+          <% unless wine.supply == nil %>
+          <% wine.supply.split(',').each_with_index do |element,index| %>
+            <a href="<%= wine.supply_url.split(',').fetch(index) %>"><%=  element %>
+            </a>
+          <% end %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </section>
+
 
 <section class="regins_col">
 <div class="container">
 <div class="col-md-12 regins_col_head nopadd martop30px">
 <div class="bortop1px"></div>
         <div class="col-md-6 regins_col_head">
-                <h3><%= @grape_detail.try(:name) %></h3>
+                <h3>Grapes</h3>
               <div class="col-sm-6 nopadd">
-                <img src="uploads/<%= @grape_detail.pic %>" class="img-responsive">
-              </div>
+              <img class="img-responsive" src="/assets/grapes_head.jpg" alt="">  </div>
               <div class="col-sm-6">
-                <p>
-                  <%= @grape_detail.try(:short_des) %> <%= link_to "Read More", grapes_path %>
+              
+              <p><strong><%= @grape_detail.try(:name) %></strong></p>
+                <p class="readmoretext">
+                  <%= @grape_detail.try(:long_des) %> 
                 </p>
+                <%= link_to "Read More", grapes_path %>
               </div>
      
             </div>
@@ -83,24 +86,27 @@
                 <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
                 </div>
                 <div class="col-sm-6">
-                  <p>
-                    <%= @about_detail.try(:description) %> <%= link_to "Read More", about_path %>
+                <p class="readmoretext">
+                    <%= @about_detail.try(:description) %>
                   </p>
+                  <%= link_to "Read More", about_path %>
                 </div>
             </div>
 
 
 <div class="col-md-12 from_our_blog">
-  <h3> <%= @blog_detail.try(:title) %> </h3>
+  <h3> Blog </h3>
 <div class="col-sm-4 nopadd">
   <%= image_tag "/uploads/" + @blog_detail.pic , class: 'img-responsive', alt: @blog_detail.pic %>
 </div>
 
 <div class="col-sm-8">
-  <p>
-    <%= @blog_detail.try(:des) %> <%= link_to "Read More", blogs_path %>
-  </p>
-</div>
+          <p><strong><%= @blog_detail.try(:title) %></strong></p>
+              <p class="readmoretext">
+                <%= @blog_detail.try(:des) %> <%= link_to "Read More", blogs_path %>
+              </p>
+              <a href="#">Read More</a>
+          </div>
 
 </div>
    
