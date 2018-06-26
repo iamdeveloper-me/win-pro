@@ -1,71 +1,39 @@
 <% provide(:title, "About Us | What We Do") %>
-    <% provide(:body_class, "about-us-page") %>
-        <!--Learn More About Us Section-->
-        <section class="learn-more-about-us-section">
-            <div class="container-fluid no-padding">
-                <div class="banner-container sf">
-                    <div class="container">
-                        <div class="row">
-                            <h1 class="title-container col-xs-12 col-sm-12 col-lg-12">
-                                <div class="city-name">About Us</div>
-                                <div class="qoute-container col-xs-12 col-sm-12 col-lg-12">Learn More About US</div>
-                            </h1>
-                        </div>
-                        <div class="row">
+<% provide(:body_class, "about-us-page") %>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End of Learn More-->
-        <section class="info-about-us-section">
-            <div class="container">
-                <div class="row">
-                   
-                      <!-- <div class="container bolg_image">
-                         <img src="assets/blog-banner1.jpg" width="100%" class="img-responsive" alt="">
-                      </div> -->
-                      <div class="col-md-12 info-text-container blogtextreapt">
-                     <div class="blog_hed no-padding">
-                         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                     </div>
+<!--Learn More About Us Section-->
+<section class="learn-more-about-us-section">
+  <div class="container-fluid no-padding">
+    <div class="banner-container sf">
+      <div class="container">
+        <div class="row">
+          <h1 class="title-container col-xs-12 col-sm-12 col-lg-12">
+            <div class="city-name">About Us</div>
+            <div class="qoute-container col-xs-12 col-sm-12 col-lg-12">Learn More About US</div>
+          </h1>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of Learn More-->
 
-                      <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-                        </p>
+<section class="info-about-us-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 info-text-container blogtextreapt">
+        <div class="blog_hed no-padding">
+          <h3>
+            <%= @detail.try(:title) %>
+          </h3>
+        </div>
 
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-                                </p>
-                            </div>
-                            <div class="col-md-12 info-text-container blogtextreapt">
-                                <div class="blog_hed no-padding">
-                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                                </div>
-           
-                                 <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                   officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-                                   </p>
-           
-                                   <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                           officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-                                           </p>
-                                       </div>
-                    </div>
-
-                   
-                </div>
-              
-            </div>
-        </section>
+        <p>
+          <%= @detail.try(:description) %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

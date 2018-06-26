@@ -3,6 +3,7 @@ class IndexController < ApplicationController
 	end
 
 	def about
+    @detail = Detail.find_by(detail_type: "About")
 	end
 
 	def grow
@@ -145,6 +146,11 @@ class IndexController < ApplicationController
 
 		grape_regions.flatten! unless grape_regions.blank?
 		wine_regions.flatten! unless wine_regions.blank?
+
+    @region_detail = Detail.find_by(detail_type: "Region")
+    @about_detail = Detail.find_by(detail_type: "About")
+    @blog_detail = Blog.order_by_desc.take
+    @grape_detail = Grape.order_by_desc.take
 
 		@regions = grape_regions | wine_regions
 	end

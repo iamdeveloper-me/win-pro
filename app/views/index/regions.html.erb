@@ -35,9 +35,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
                 <div class="inner text-info-container">
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      <%= @region_detail.try(:description) %>
                     </p>
                     <div class="col-md-12 region_bg">
                     <ul>
@@ -64,53 +62,42 @@
     <div class="col-md-12 regins_col_head">
 <div class="bortop1px"></div>
             <div class="col-md-6 regins_col_head">
-                    <h3>GRAPES</h3>
+                  <h3><%= @grape_detail.try(:name) %></h3>
+
                   <div class="col-sm-6 nopadd">
                   <img class="img-responsive" src="/assets/grapes_head.jpg" alt="">
                   </div>
                   <div class="col-sm-6">
-                  <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="grapes">Read More</a>
-                   </p>
+                    <p>
+                      <%= @grape_detail.try(:short_des) %> <%= link_to "Read More", grapes_path %>
+                     </p>
                   </div>
          
                 </div>
                 <div class="col-md-6 regins_col_head">
-                    <h3>ABOUT US</h3>
+                    <h3> <%= @about_detail.try(:title) %> </h3>
+
                     <div class="col-sm-6 nopadd">
                     <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
                     </div>
                     <div class="col-sm-6">
-                    <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  <a href="about">Read More</a>
-                     </p>
+                      <p>
+                        <%= @about_detail.try(:description) %> <%= link_to "Read More", about_path %>
+                      </p>
                     </div>
                 </div>
 
 
     <div class="col-md-12 from_our_blog">
-    <h3>FROM OUR BLOG</h3>
+    <h3> <%= @blog_detail.try(:title) %> </h3>
     <div class="col-sm-4 nopadd">
-   
-        
-            <img class="img-responsive" src="/assets/blog_head.jpg" class="img-responsive" alt="">
-  
+      <%= image_tag "/uploads/" + @blog_detail.pic , class: 'img-responsive', alt: @blog_detail.pic %>
     </div>
     <div class="col-sm-8">
-    <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-<a  href="blogs">Read More</a>
-    </p>
+      <p>
+        <%= @blog_detail.try(:des) %> <%= link_to "Read More", blogs_path %>
+      </p>
     </div>
-
-      
-
-
-
-
-           
         </div>
        
         

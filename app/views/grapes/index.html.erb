@@ -1,116 +1,114 @@
 <% provide(:body_class, "ranking-page") %>
-    <!--Start of Banner section-->
-    <section class="main-banner-section">
-        <div class="container-fluid no-padding">
-            <div class="banner-container">
-                <div class="container">
-                    <div class="row">
+<!--Start of Banner section-->
+<section class="main-banner-section">
+  <div class="container-fluid no-padding">
+    <div class="banner-container">
+      <div class="container">
+        <div class="row">
+          <div class="category-title col-xs-12 col-sm-12 col-lg-12">
+            <span class="separator" style="margin-left: 20px;" >Top Blog |</span>
+            <span class="date-container "><%= DateTime.now.strftime "%B %Y" %></span>
+          </div>
 
-                    <div class="category-title col-xs-12 col-sm-12 col-lg-12">
-                    <span class="separator" style="margin-left: 20px;" >Top Blog |</span>
-                    <span class="date-container "><%= DateTime.now.strftime "%B %Y" %></span>
-                </div>
-                <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">Grapes</h1>
-            </div>
-
-
-
-
-                        
-
-                    </div>
-                </div>
-            </div>
+          <h1 class="places-container col-xs-12 col-sm-12 col-lg-12">
+            Grapes
+          </h1>
         </div>
-    </section>
-    <!--End of Banner section-->
-    <section class="learn-more-section">
-        <div class="container mobnopadd">
-            <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px">
-                <img src="assets/grap_bottal.jpg" class="img-responsive" width="100%">
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of Banner section-->
+
+<section class="learn-more-section">
+  <% @grapes.each_with_index do |grape, index| %>
+    <div class="container mobnopadd">
+      <div class="col-md-6 col-sm-12 col-xs-12  inner_textp mobpadd15px">
+        <a href="<%= grapes_path %>">
+          <img src="uploads/<%= grape.pic %>" class="img-responsive">
+        </a>
+        <!-- <img src="assets/grap_bottal.jpg" class="img-responsive" width="100%"> -->
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
+        <div class="inner text-info-container">
+          <div class="header-section">
+            <div class="number-container"><%= index+1 %></div>
+            <div class="separator"></div>
+            <div class="name-container">
+              <div class="title-container"><%= set_title grape.name %></div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 milano_para">
-                <div class="inner text-info-container">
-                    <p>
-                        <strong>So</strong> why are some wines cheap, and others are more expensive? Cheap wines are stock-picked
-                        from the vineyards and processed by machinery. The grapes are often damaged or require large amounts
-                        of pesticides to help keep rot and decay at bay. Many preservatives are added, lowering sanitation
-                        standards and decreasing production costs. When you purchase a cheap bottle of wine, you are paying
-                        for pesticides, preservatives, and low quality grapes.
-                    </p>
-                </div>
-                <div class="regins">
-                    <span>REGIONS : </span> MILANO
-                    <span> SUPPLYER : </span> PERSON2
-                </div>
-            </div>
+          </div>
+          <span>
+            <%= grape.long_des %>
+          </span>
         </div>
-    </section>
+        <div class="regins">
+          <span>REGIONS : </span> 
+          <% unless grape.regions == nil %>
+            <span>
+              <% grape.regions.split(',').each do |element| %>
+                <a href="#"> <span><%= element %></span> </a>
+              <% end %>
+            </span>                
+          <% end %>
 
+          <span> SUPPLYER : </span> 
+          <% unless grape.supply == nil %>
+            <% grape.supply.split(',').each_with_index do |element,index| %>
+              <a href="<%= grape.supply_url.split(',').fetch(index) %>"><%= element %>
+              </a>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</section>
 
-
-    <section class="regins_col">
-    <div class="container">
+<section class="regins_col">
+  <div class="container">
     <div class="col-md-12 regins_col_head nopadd martop30px">
-    <div class="bortop1px"></div>
-            <div class="col-md-6 regins_col_head">
-                    <h3>REGIONS</h3>
-                  <div class="col-sm-6 nopadd">
-                  <img class="img-responsive" src="/assets/regions_head.jpg" alt="">
-                  </div>
-                  <div class="col-sm-6">
-                  <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="regions">Read More</a>
-                   </p>
-                  </div>
-         
-                </div>
-                <div class="col-md-6 regins_col_head">
-                    <h3>ABOUT US</h3>
-                    <div class="col-sm-6 nopadd">
-                    <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
-                    </div>
-                    <div class="col-sm-6">
-                    <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  <a href="about">Read More</a>
-                     </p>
-                    </div>
-                </div>
-    
-    
-    <div class="col-md-12 from_our_blog">
-    <h3>FROM OUR BLOG</h3>
-    <div class="col-sm-4 nopadd">
-    
-        
-            <img class="img-responsive" src="/assets/blog_head.jpg" class="img-responsive" alt="">
-    
-    </div>
-    <div class="col-sm-8">
-    <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    <a  href="blogs">Read More</a>
-    </p>
-    </div>
-    
-      
-    
-    
-    
-    
-           
+      <div class="bortop1px"></div>
+        <div class="col-md-6 regins_col_head">
+          <h3> <%= @region_detail.try(:title) %> </h3>
+
+          <div class="col-sm-6 nopadd">
+            <img class="img-responsive" src="/assets/regions_head.jpg" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p>
+              <%= @region_detail.try(:description) %> <%= link_to "Read More", regions_path %>
+            </p>
+          </div>
         </div>
-       
-        
+
+        <div class="col-md-6 regins_col_head">
+          <h3> <%= @about_detail.try(:title) %> </h3>
+
+          <div class="col-sm-6 nopadd">
+            <img class="img-responsive" src="/assets/about_head.jpg" alt=""> 
+          </div>
+          <div class="col-sm-6">
+            <p>
+              <%= @about_detail.try(:description) %> <%= link_to "Read More", about_path %>
+            </p>
+          </div>
         </div>
+
+        <div class="col-md-12 from_our_blog">
+          <h3> <%= @blog_detail.try(:title) %> </h3>
+
+          <div class="col-sm-4 nopadd">
+            <%= image_tag "/uploads/" + @blog_detail.pic , class: 'img-responsive', alt: @blog_detail.pic %>
+          </div>
+
+          <div class="col-sm-8">
+              <p>
+                <%= @blog_detail.try(:des) %> <%= link_to "Read More", blogs_path %>
+              </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-
-
-
-
-
-
-    
+  </div>
+</section>
