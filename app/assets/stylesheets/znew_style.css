@@ -1058,12 +1058,19 @@ padding-left: 0px;
     .mobnopadd{
         padding: 0px!important;
     }
-    .mobpadd15px{
-        padding: 15px;
-        padding-left: 0;
-
+    .about-us-page .learn-more-about-us-section .banner-container.sf{
+        max-height: 150px;
+        min-height: 100px !important;
     }
-   
+    .region_banner{
+        min-height: unset;
+    }
+   .places-container{
+        text-align: center;
+   }
+   .category-title{
+       text-align: center !important;
+   }
     .marbot100px{
         margin-bottom: 100px;
         padding-right: 0 !important;
